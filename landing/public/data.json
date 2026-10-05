@@ -1,0 +1,41 @@
+{
+  "bootcamp": {
+    "name": "Junior Front-End Developer",
+    "cohort": "CF34",
+    "assignmentCount": 38
+  },
+  "links": [
+    {
+      "label": "Class GitHub",
+      "href": "https://github.com/",
+      "hint": "Repo",
+      "icon": "github"
+    },
+    {
+      "label": "CodingFront",
+      "href": "https://codingfront.dev/",
+      "hint": "Bootcamp",
+      "icon": "site"
+    },
+    {
+      "label": "Support",
+      "href": "https://t.me/codingfront_support3",
+      "hint": "Telegram",
+      "icon": "telegram"
+    }
+  ],
+  "students": [
+    { "firstName": "Negar", "pizzaSlices": 1, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Amir", "pizzaSlices": 2, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Amin", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Mostafa", "pizzaSlices": 2, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Sina", "pizzaSlices": 1, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Mahya", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Negin", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Azad", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Erfan", "pizzaSlices": 1, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Alireza", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Mehdi", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Poune", "pizzaSlices": 1, "assignments": [{ "title": "Basic Introduction", "status": "done" }] }
+  ]
+}
