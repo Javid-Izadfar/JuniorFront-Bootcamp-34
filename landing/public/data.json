@@ -26,7 +26,7 @@
   ],
   "students": [
     { "firstName": "Negar", "pizzaSlices": 1, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
-    { "firstName": "Amir", "pizzaSlices": 2, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
+    { "firstName": "Amir", "pizzaSlices": 3, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
     { "firstName": "Amin", "pizzaSlices": 0, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
     { "firstName": "Mostafa", "pizzaSlices": 2, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
     { "firstName": "Sina", "pizzaSlices": 1, "assignments": [{ "title": "Basic Introduction", "status": "done" }] },
