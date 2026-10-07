@@ -1,0 +1,119 @@
+body {
+    background-color: white;
+}
+
+
+header {
+    background-color: darkslategray;
+    text-align: center;
+    color: goldenrod;
+}
+
+
+h1 {
+    color: white;
+}
+
+
+nav {
+    background-color: black;
+    text-align: center;
+}
+
+
+.nav-list {
+    list-style: none;
+}
+
+
+.nav-list-item {
+    display: inline-block;
+    width: 100px;
+}
+
+
+.nav-list-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+main {
+    background-color: white;
+    text-align: left;
+}
+
+
+#sec1 {
+    background-color: wheat;
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+}
+
+
+#sec2 {
+    background-color: white;
+}
+
+
+.heading {
+    color: darkslategray;
+}
+
+
+.sizing {
+    background-color: goldenrod;
+    height: 170px;
+    width: 500px;
+    display: inline-block;
+}
+
+
+p {
+    line-height: 1.2;
+}
+
+
+aside {
+    background-color: wheat;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    color: darkslategray;
+}
+
+
+.foobar {
+    background-color: goldenrod;
+    color: black;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.list {
+    list-style: none;
+}
+
+
+.nav-list-link--bold {
+    color: black;
+    font-weight: bold;
+}

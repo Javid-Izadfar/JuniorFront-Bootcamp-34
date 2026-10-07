@@ -1,0 +1,111 @@
+.ziro{
+    background-color: darkcyan;
+
+
+
+}
+.first{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: coral;
+    font-size: 10px;
+    text-align: center;
+    height: 30px;
+    font-weight: 80px;
+}
+.second{
+    text-align: center;
+    font-size: 50px;
+    height: 80px;
+
+}
+.third{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: coral;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 80px;
+    
+}
+.b{
+    list-style: none;
+    background-color: black;
+    text-align: center;
+    
+}
+.nav-list{
+    display: inline-block;
+     
+    
+}
+.nav-list-Item{
+    display: inline-block;
+    width: 100px;
+    
+    
+}
+                    
+
+
+.four{
+
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.six{
+    background-color: antiquewhite;
+
+}
+.seven{
+     text-align: justify;
+}
+.eight{
+    background-color: aqua;
+    width: 200;
+    height: 400;
+
+}
+.nine{
+    display:inline-block;
+    
+    
+}
+a{
+
+}
+.ten{
+    background-color: rgb(214, 176, 23);
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    
+}
+.eleven{
+    background-color: black;
+    text-align: center;
+    height: 30;
+}
+.eleven-1{
+    display: inline-block;
+    width: 50px;
+    
+    
+    
+}
+.twelve{
+    color: aliceblue;
+    font-size: 10px;
+    font-weight: 200px
+
+}
+.thirteen{
+    list-style: none;
+    text-align: left;
+}
+.fourteen{
+    list-style: none;
+}
+.fifteen{
+    list-style: none;
+}

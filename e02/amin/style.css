@@ -1,0 +1,216 @@
+/* page */
+.page {
+  background-color: #ffffff;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: #222222;
+  text-align: center;
+}
+
+.site {
+  display: inline-block;
+  width: 1000px;
+  text-align: left;
+}
+
+/* header */
+.page-top {
+  width: 1000px;
+  background-color: #2f4f4f;
+  text-align: center;
+}
+
+.exhibit-dates {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  line-height: 20px;
+  color: #e6c229;
+}
+
+.exhibit-title {
+  font-family: "Times New Roman", serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 162px;
+  color: #fdf5e6;
+}
+
+.exhibit-tagline {
+  height: 40px;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  line-height: 20px;
+  color: #e6c229;
+}
+
+/* menu */
+.menu {
+  display: inline-block;
+  width: 1000px;
+  height: 56px;
+  vertical-align: top;
+  background-color: #000000;
+}
+
+.menu-list {
+  width: 920px;
+  list-style: none;
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 110px;
+  line-height: 24px;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* columns */
+.columns {
+  width: 1000px;
+  background-color: #f5deb3;
+  font-size: 0;
+}
+
+.col-main {
+  display: inline-block;
+  width: 680px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.col-side {
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* common */
+.text-box {
+  display: inline-block;
+  width: 560px;
+  text-align: left;
+}
+
+.block-title {
+  font-family: "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: bold;
+  color: #2f4f4f;
+}
+
+.bold-word {
+  font-weight: bold;
+}
+
+/* intro */
+.intro-block {
+  width: 680px;
+  background-color: #fdf5e6;
+  text-align: center;
+}
+
+.intro-photo {
+  display: block;
+  width: 560px;
+  height: 232px;
+}
+
+.intro-text {
+  font-size: 16px;
+}
+
+/* featured */
+.featured-block {
+  width: 680px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.featured-text {
+  font-size: 16px;
+}
+
+/* sidebar */
+.side-box {
+  display: inline-block;
+  width: 260px;
+  text-align: left;
+}
+
+.side-heading {
+  font-family: "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2f4f4f;
+}
+
+.side-list {
+  list-style: none;
+}
+
+.side-item {
+  font-size: 16px;
+  color: #2f4f4f;
+}
+
+.side-divider {
+  color: #2f4f4f;
+}
+
+.curator-note {
+  font-size: 16px;
+  color: #2f4f4f;
+}
+
+/* closing */
+.call-block {
+  width: 1000px;
+  height: 96px;
+  background-color: #daa520;
+  text-align: center;
+}
+
+.call-text {
+  display: inline-block;
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #000000;
+}
+
+/* footer */
+.page-bottom {
+  display: inline-block;
+  width: 1000px;
+  height: 64px;
+  background-color: #000000;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bottom-list {
+  width: 920px;
+  list-style: none;
+  color: #ffffff;
+}
+
+.bottom-item {
+  display: inline-block;
+}
+
+.bottom-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #cccccc;
+}

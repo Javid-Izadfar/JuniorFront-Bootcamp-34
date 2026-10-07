@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #222;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.hero {
+  width: 1000px;
+  height: 277.75px;
+  margin: 0 auto;
+  background-color: #2f4f4f;
+  text-align: center;
+}
+
+.opening {
+  margin: 0;
+  height: 20.5px;
+  color: #ffd700;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  line-height: 20.5px;
+}
+
+.hero h1 {
+  margin: 20px 0 0 0;
+  padding-top: 23.88px;
+  height: 96.38px;
+  color: white;
+  font-family: 'Times New Roman', serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 71px;
+  white-space: nowrap;
+}
+
+.subtitle {
+  margin: 20px 0 0 0;
+  padding-top: 22.87px;
+  height: 45.37px;
+  color: #ffd700;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  line-height: 22.5px;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  height: 55.5px;
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 18.5px 0 0 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main-content {
+  width: 1000px;
+  height: 607.88px;
+  margin: 0 auto;
+  background-color: #f5deb3;
+  font-size: 0;
+}
+
+/* =========================================
+   LEFT COLUMN
+========================================= */
+
+.left-column {
+  display: inline-block;
+  width: 680px;
+  height: 607.88px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+  width: 680px;
+  height: 403.44px;
+  background-color: #fdf5e6;
+}
+
+.content {
+  width: 560px;
+  margin: 0 auto;
+}
+
+.about .content {
+  padding-top: 28.22px;
+}
+
+.about h2,
+.highlights h2 {
+  margin: 0;
+  color: #2f4f4f;
+  font-family: 'Times New Roman', serif;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 39.5px;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.exhibition-image {
+  display: block;
+  width: 560px;
+  height: 232.22px;
+  margin-top: 16px;
+  object-fit: cover;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description {
+  margin: 16px 0 0 0;
+  color: #222;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.highlights {
+  width: 680px;
+  height: 204.44px;
+  background-color: white;
+}
+
+.highlights .content {
+  padding-top: 28.22px;
+}
+
+.highlight-list {
+  margin: 28.22px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight-list li {
+  height: 18.5px;
+  color: #222;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+  display: inline-block;
+
+  width: 300px;
+  height: 444.5px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.sidebar-content {
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+.sidebar h3 {
+  margin: 0;
+  padding: 0;
+  color: #2f4f4f;
+  font-family: 'Times New Roman', serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 28.5px;
+}
+
+/* =========================================
+   GLANCE LIST
+========================================= */
+
+.glance-list {
+  margin: 16px 0 16px 0;
+  padding: 10px 0 0 40px;
+  list-style: none;
+}
+
+.glance-list li {
+  height: 18.5px;
+  color: #2f4f4f;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   SEPARATORS
+========================================= */
+
+.sidebar hr {
+  width: 240px;
+  height: 2px;
+  margin: 16px 0;
+  border: 0;
+  border-top: 1px solid #808080;
+}
+
+/* =========================================
+   VISITOR TIPS
+========================================= */
+
+.tips-list {
+  margin: 16px 0 16px 0;
+  padding: 10px 0 0 40px;
+  color: #2f4f4f;
+}
+
+.tips-list li {
+  height: 18.5px;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   CURATOR
+========================================= */
+
+.quote {
+  margin: 16px 0 0 0;
+  color: #2f4f4f;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   GOLD SECTION
+========================================= */
+
+.closing-message {
+  width: 1000px;
+  height: 96px;
+  margin: 0 auto;
+  background-color: #daa520;
+  text-align: center;
+}
+
+.closing-message h2 {
+  margin: 0;
+  padding-top: 32.5px;
+  color: black;
+  font-family: 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 31px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 16px;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-links {
+  margin: 0 0 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: inline-block;
+}
+
+.footer-links li:not(:last-child)::after {
+  content: ' | ';
+  margin: 0 8px;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links li:first-child a {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  color: #a9a9a9;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
