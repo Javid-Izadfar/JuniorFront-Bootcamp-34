@@ -1,0 +1,92 @@
+/* .header {
+    text-align: center;
+}
+.header-banner {
+    background-color: green;
+    height: 222px;
+}
+.header-nav {
+    background-color: black;
+}
+.header-nav-list {
+    list-style: none;
+}
+.header-nav-item {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+}
+.header-nav-spacer {
+    height: 18px;
+}
+.header-nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.wrapper {
+    background-color: red;
+    display: flex;
+}
+.aside {
+    /* display: inline-block;
+    height: 100px;
+    color: white;
+    background-color: blue;
+    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.main {
+    background-color: orange;
+    height: 607px;
+    flex-grow: 1;
+} */
+/* .section-about {
+    height: 403px;
+    background-color: beige;
+}
+.section-highlights {
+    height: 204px;
+    background-color: gray;
+} */
+/*
+
+.footer {
+    background-color: yellow;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: purple;
+    padding: 20px;
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    width: 500px;
+}
+.content {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.content-1 {
+    background-color: green;
+    /* margin-bottom: 20px; */
+}
+
+.content-2 {
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
