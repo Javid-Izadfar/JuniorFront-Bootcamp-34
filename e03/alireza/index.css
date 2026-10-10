@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+.main-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f4f4f;
+  padding: 0%;
+  margin: 0%;
+}
+.top-header-wrapper {
+  color: #ffd700;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400px;
+  text-align: center;
+}
+.mid-header-wrapper {
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+}
+.bot-header-wrapper {
+  color: #ffd700;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  background-color: black;
+  padding: 0%;
+  margin: 0%;
+  justify-content: center;
+}
+.nav-list {
+  list-style: none;
+  padding: 0%;
+}
+.nav-item {
+  display: inline-block;
+  padding-inline: 14px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.body {
+  margin: 0;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.main-section {
+  flex-grow: 2;
+}
+.sec-about {
+  background-color: #fdf5e6;
+}
+.aside {
+  background-color: #f5deb3;
+  flex-grow: 1;
+}
+.h-about {
+  padding: 20px 60px 10px 60px;
+  margin: 0;
+  font-size: 34px;
+}
+.img {
+  margin: 0px 60px 0px 60px;
+}
+.h-featured {
+  padding: 0px 60px 0px 60px;
+}
+.about-content {
+  padding: 10px 60px 10px 60px;
+  margin: 10px 0px 0px 0px;
+  color: #2f4f4f;
+}
+.Featured {
+  padding: 0px 60px 0px 60px;
+  margin: 0px;
+  color: #2f4f4f;
+}
+.Featured-last {
+  padding: 0px 60px 20px 60px;
+  margin: 0px;
+}
+.Glance {
+  padding: 0px 30px 0px 30px;
+  color: #2f4f4f;
+}
+.Glance-list-item {
+  list-style: none;
+  color: #2f4f4f;
+}
+.space-first {
+  margin: 20px;
+  color: #2f4f4f;
+}
+.space-second {
+  margin: 20px;
+  color: #2f4f4f;
+}
+.Visitor-tips {
+  padding: 0px 30px 0px 30px;
+}
+.visitor-list-item {
+  list-style: none;
+  color: #2f4f4f;
+}
+.Curator {
+  padding: 0px 30px 0px 30px;
+  color: #2f4f4f;
+}
+.Curator-content {
+  padding: 0px 30px 0px 30px;
+  color: #2f4f4f;
+}
+.footer-caption {
+  background-color: #daa520;
+  font-size: xx-large;
+  width: 100%;
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  justify-content: center;
+}
+.footer-nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-link {
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: medium;
+  display: inline-block;
+  margin: 20px 0px 20px 0px;
+}
+.footer-legals {
+  display: flex;
+  color: gray;
+  background-color: black;
+  justify-content: center;
+  font-size: smaller;
+}

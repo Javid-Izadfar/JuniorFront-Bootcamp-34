@@ -1,0 +1,346 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #222;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.hero {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #2f4f4f;
+  text-align: center;
+}
+
+.opening {
+  height: 20.5px;
+  margin: 0;
+  color: #ffd700;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  line-height: 20.5px;
+}
+
+.hero h1 {
+  margin: 20px 0 0;
+  padding: 23.88px 0 2.5px;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 71px;
+}
+
+.subtitle {
+  height: 45.37px;
+  margin: 20px 0 0;
+  padding-top: 22.87px;
+  color: #ffd700;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  line-height: 22.5px;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  margin-top: 20px;
+  padding: 18.5px 0;
+  background-color: black;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f5deb3;
+}
+
+/* =========================================
+   LEFT COLUMN
+========================================= */
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #fdf5e6;
+}
+
+.content {
+  width: 560px;
+  margin: 0 auto;
+}
+
+.about .content {
+  padding-top: 28.22px;
+}
+
+.about h2,
+.highlights h2 {
+  margin: 0;
+  color: #2f4f4f;
+  font-family: "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 39.5px;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.exhibition-image {
+  display: block;
+  width: 560px;
+  height: 232.22px;
+  margin-top: 16px;
+  object-fit: cover;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description {
+  margin: 16px 0 0;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.highlights {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.highlights .content {
+  padding-top: 28.22px;
+}
+
+.highlight-list {
+  margin: 28.22px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight-list li {
+  min-height: 18.5px;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  min-width: 0;
+  font-size: 16px;
+}
+
+.sidebar-content {
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  color: #2f4f4f;
+  font-family: "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 28.5px;
+}
+
+/* =========================================
+   GLANCE LIST
+========================================= */
+
+.glance-list {
+  margin: 16px 0;
+  padding: 10px 0 0 40px;
+  list-style: none;
+}
+
+.glance-list li {
+  color: #2f4f4f;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   SEPARATORS
+========================================= */
+
+.sidebar hr {
+  width: 100%;
+  margin: 16px 0;
+  border: 0;
+  border-top: 1px solid #808080;
+}
+
+/* =========================================
+   VISITOR TIPS
+========================================= */
+
+.tips-list {
+  margin: 16px 0;
+  padding: 10px 0 0 40px;
+  color: #2f4f4f;
+  list-style: none;
+}
+
+.tips-list li {
+  font-size: 16px;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   CURATOR
+========================================= */
+
+.quote {
+  margin: 16px 0 0;
+  color: #2f4f4f;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 18.5px;
+}
+
+/* =========================================
+   GOLD SECTION
+========================================= */
+
+.closing-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: #daa520;
+  text-align: center;
+}
+
+.closing-message h2 {
+  margin: 0;
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 31px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 0;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links .visit-link {
+  text-decoration: underline;
+}
+
+.separator {
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  color: #a9a9a9;
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -1,0 +1,146 @@
+
+.header{
+    background-color: #2f4f4f;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    
+}
+.p2{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 20px;
+    
+}
+.header1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+.nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.nav-a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.page{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: white;
+}
+.aside{
+    background-color: rgb(233, 201, 160);
+    width: 30%;
+    height: 900px;
+}
+.header-as{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5%;
+    color: rgb(77, 77, 77);
+}
+.link-as{
+    list-style: none;
+}
+.list-item{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0%;
+    margin-left: 5%;
+    
+}
+.main{
+    background-color: white;
+    width: 75%;
+    height: 680px;
+    
+}
+.header-2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin-left: 5%;
+    color: rgb(77, 77, 77);
+}
+.imag{
+    width: 760px;
+    height: 360px;
+    margin-left: 5%;
+}
+.p3{
+    font-size: 25px;
+    margin-left: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-3{
+    margin-left: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(77, 77, 77);
+    font-weight: 800;
+    
+}
+.list-style{
+    list-style: none;
+}
+.list{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    
+
+}
+    
+.footer {
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    
+}
+
+.header-foot {
+    padding: 30px;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+
+
+}
+
+.nav-foot {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-foot-link {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.p-foot {
+    background-color: black;
+    color: rgb(162, 162, 162);
+    margin: 0;
+    padding: 15px;
+    
+}
+

@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
+header {
+  text-align: center;
+}
+
+aside {
+  background-color: #f5deb3;
+  padding: 26px 30px 0 30px;
+  flex-grow: 1;
+  color: #2f4f4f;
+  justify-content: center;
+}
+
+main {
+  width: 80%;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  src: url(/assets/fonts/trebuc.ttf) format("truetype");
+}
+
+.header-info {
+  font-family: "Courier Prime", monospace;
+  color: #ffd700;
+  font-size: 20px;
+}
+
+.header-info_1 {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.header-pt_1 {
+  background-color: #2f4f4f;
+  padding: 0 0 20px 0;
+}
+
+.header-pt_2 {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: black;
+  padding: 18px 0;
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link-list {
+  margin: 0 0 0 10px;
+}
+
+.about {
+  padding: 0 60px;
+}
+
+.title {
+  color: #2f4f4f;
+  margin-top: 28px;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.about-text {
+  font-family: "Trebuchet MS", sans-serif;
+  margin-top: 16px;
+}
+
+.featured {
+  padding: 0 60px;
+}
+
+.featured-list {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-list-item {
+  display: flex;
+}
+
+.featured-title {
+  color: #2f4f4f;
+  font-weight: 700;
+  font-size: 34px;
+  margin: 30px 0;
+}
+
+.item-title {
+  font-weight: 700;
+}
+
+.item-info {
+  font-weight: 400;
+}
+
+.aside-title {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.aside-head {
+  font-weight: 700;
+}
+
+.aside-text {
+  font-weight: 400;
+}
+
+.aside-list {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+
+.aside-item {
+  display: flex;
+}
+
+.aside-sec {
+  margin-bottom: 16px;
+}
+
+.line {
+  border: solid 1px #808080;
+  text-align: center;
+}
+
+.background {
+  /* margin-top: 16px; */
+  text-align: center;
+  background-color: #daa520;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 32px 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.foot {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: black;
+  padding-top: 16px;
+  color: white;
+}
+
+.foot-link-list {
+  display: flex;
+  justify-content: center;
+}
+
+.foot-link {
+  font-size: 14px;
+  color: white;
+}
+.copyright {
+  color: #a9a9a9;
+  font-size: 14px;
+  margin-top: 14px;
+}
