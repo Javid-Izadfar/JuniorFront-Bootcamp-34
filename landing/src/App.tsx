@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { GroupDialog, GroupIcon } from "./components/GroupDialog.tsx";
 import { iconForLink, LinkIcon } from "./components/LinkIcon.tsx";
 import { StudentCard } from "./components/StudentCard.tsx";
 import { isBoardData, type BoardData } from "./types.ts";
@@ -6,6 +7,7 @@ import { isBoardData, type BoardData } from "./types.ts";
 export function App() {
   const [data, setData] = useState<BoardData | null>(null);
   const [error, setError] = useState("");
+  const [groupsOpen, setGroupsOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -46,6 +48,20 @@ export function App() {
   const assignmentCount = data?.bootcamp?.assignmentCount ?? 38;
 
   return (
+    <>
+    <button
+      type="button"
+      className="group-launch"
+      aria-label="Group students"
+      onClick={() => setGroupsOpen(true)}
+    >
+      <GroupIcon />
+    </button>
+    <GroupDialog
+      open={groupsOpen}
+      students={data?.students ?? []}
+      onClose={() => setGroupsOpen(false)}
+    />
     <div className="wrap">
       <header className="site-header">
         <p className="kicker">
@@ -104,5 +120,6 @@ export function App() {
         </section>
       </main>
     </div>
+    </>
   );
 }
