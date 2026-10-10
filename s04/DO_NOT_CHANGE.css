@@ -1,0 +1,99 @@
+/*
+  Flexbox quiz starter.
+  Add the flex rules that match the Figma frames.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    width: 1280px;
+    margin: 28px auto 0;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h2 {
+    width: 1280px;
+    margin: 36px auto 8px;
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container {
+    display: block;
+    padding: 20px 0;
+}
+
+section > .container {
+    width: 1280px;
+    height: 832px;
+    margin: 0 auto 48px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.box {
+    display: inline-block;
+    margin: 6px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.container.box {
+    display: block;
+    margin: 16px 48px;
+}
+
+.yellow {
+    background-color: #f8d377;
+    color: #323031;
+}
+
+.green {
+    background-color: #64a772;
+    color: #323031;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #323031;
+}
+
+.gray {
+    background-color: #ebebeb;
+    color: #323031;
+}
+
+.blue {
+    background-color: #3e6bd8;
+    color: #ffffff;
+}
+
+.purple {
+    background-color: #7f60bc;
+    color: #ffffff;
+}
+
+.pink {
+    background-color: #dd5571;
+    color: #ffffff;
+}
+
+.dark {
+    background-color: #323031;
+    color: #ffffff;
+}
