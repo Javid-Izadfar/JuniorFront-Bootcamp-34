@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --red: red;
+    --red-darken: rgb(79, 1, 1);
+    --blue: blue;
+    --green: green;
+    --orange: orange;
+    --cyan: cyan;
+    --purple: purple;
+    --pink: pink;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+.bg-red {
+    background-color: var(--red);
+    transition: 1s background ease-out 2s, 2s padding ease-in;
+    /* transition-duration: 1s;
+    transition-property: background;
+    transition-timing-function: ease-out;
+    transition-delay: 2s; */
+}
+.bg-red:hover {
+    background-color: var(--red-darken);
+    padding: 50px;
+}
+.bg-blue {
+    background-color: var(--blue);
+}
+.bg-green {
+    background-color: var(--green);
+}
+.bg-orange {
+    background-color: var(--orange);
+}
+.bg-pink {
+    background-color: var(--pink);
+}
+.bg-cyan {
+    background-color: var(--cyan);
+}
+.bg-purple {
+    background-color: var(--purple);
+}
+
+
+.wrapper {
+    --size: 500px;
+    width: var(--size);
+    height: var(--size);
+    margin: calc(var(--size) / 4);
+
+    position: relative;
+}
+
+.item {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* right: 20px; */
+    /* bottom: 20px; */
+}
+
+.fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.fixed:hover {
+    top: 30px;
+    left: 30px;
+}
+
+.sticky {
+    position: sticky;
+    top: 50px;
+    right: 0;
+}
+
+.z-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.z-2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
