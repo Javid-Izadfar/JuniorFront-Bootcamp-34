@@ -1,43 +1,60 @@
 <!doctype html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>آیسی دانکی | آبمیوه تازه</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <!-- bg-[#e7e6eb] -->
   <body
-    class="m-0 min-w-[320px] bg-[#31236d] text-[#040202] antialiased [font-family:Vazirmatn,sans-serif]"
+    class="m-0 min-w-[320px] bg-[#e6eaeb] text-[#040202] antialiased [font-family:Vazirmatn,sans-serif]"
   >
-    <header class="sticky top-0 z-10 h-16 bg-[#e6eaeb]">
+    <header class="sticky top-0 z-50 h-16 bg-[#e6eaeb]">
       <nav
         class="container mx-auto flex h-full w-[min(1200px,calc(100%_-_40px))] items-center justify-between"
+        aria-label="ناوبری اصلی"
       >
-        <a class="h-10 w-[108px] shrink-0" href="#home">
+        <a class="h-10 w-[108px] shrink-0" href="#home" title="صفحه اصلی">
           <img
-            class="w-full h-full"
+            class="size-full"
             src="./assets/img/logo/logo.svg"
             alt="لوگوی آیسی دانکی"
             width="108"
             height="40"
           />
         </a>
+
         <div
           class="flex flex-row-reverse items-center gap-4 text-base font-medium whitespace-nowrap"
         >
-          <a href="#shop" title="فروشگاه">فروشگاه‌ها</a>
-          <a href="#flavors" title="طعم ها">طعم‌ها</a>
+          <a href="#shop" title="فروشگاه‌ها">فروشگاه‌ها</a>
+          <a href="#flavors" title="طعم‌ها">طعم‌ها</a>
           <a href="#home" title="خانه">خانه</a>
         </div>
       </nav>
     </header>
+
+    <main>
+      <section class="min-h-[814px] overflow-hidden" id="home">
+        <div class="container relative mx-auto min-h-[814px] w-full max-w-[1266px] px-5 pt-[152px]">
+          <!-- Main title -->
+          <h1
+            class="absolute left-0 top-[81px] z-10 whitespace-nowrap text-left text-[300px] leading-none text-[#346e16] [font-family:Lalezar,sans-serif]"
+          >
+            آیسی دانکی
+          </h1>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
