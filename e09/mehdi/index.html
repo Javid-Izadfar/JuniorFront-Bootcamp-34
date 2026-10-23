@@ -19,6 +19,7 @@
   <body
     class="m-0 min-w-[320px] bg-[#e6eaeb] text-[#040202] antialiased [font-family:Vazirmatn,sans-serif]"
   >
+    <!-- Start Header -->
     <header class="sticky top-0 z-50 h-16 bg-[#e6eaeb]">
       <nav
         class="container mx-auto flex h-full w-[min(1200px,calc(100%_-_40px))] items-center justify-between"
@@ -43,10 +44,11 @@
         </div>
       </nav>
     </header>
-
+    <!-- End Header -->
+    <!-- Start Main -->
     <main>
-      <section class="min-h-[814px] overflow-hidden" id="home">
-        <div class="container relative mx-auto min-h-[814px] w-full max-w-[1266px] px-5 pt-[152px]">
+      <section class="min-h-[814px] overflow-hidden">
+        <div class="container relative px-5 mx-auto max-w-7xl pt-38">
           <!-- Main title -->
           <h1
             class="absolute left-0 top-[81px] z-10 whitespace-nowrap text-left text-[300px] leading-none text-[#346e16] [font-family:Lalezar,sans-serif]"
@@ -173,6 +175,145 @@
           </div>
         </div>
       </section>
+
+      <section class="container relative px-5 mx-auto max-w-7xl">
+        <!-- Section title -->
+        <h2
+          class="m-0 text-center text-[clamp(36px,3.3333vw,48px)] leading-[75px] [font-family:Lalezar,sans-serif]"
+          id="flavors-title"
+        >
+          طعم‌های آیسی دانکی
+        </h2>
+
+        <!-- Flavors container -->
+        <div
+          class="mt-[99px] flex min-h-[537px] justify-center rounded-[90px] bg-[#040202] pb-[60px]"
+        >
+          <div class="mt-[-75px] flex w-full max-w-[988px] flex-col gap-[60px]">
+            <!-- First row -->
+            <div class="flex flex-wrap justify-between w-full gap-6">
+              <!-- Honey Lemon -->
+              <div
+                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
+              >
+                >
+                <span
+                  class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
+                >
+                  <img
+                    class="object-contain mt-6 size-25"
+                    src="./assets/img/main/lime2.png"
+                    alt=""
+                  />
+                </span>
+                <h3 class="mt-3 text-base font-bold leading-6">لیمو عسل</h3>
+                <p class="mt-4 mb-0 w-full text-sm leading-[18px] text-white/60">
+                  ترکیب آب لیموی سنگی تازه به همراه عسل و آب گازدار
+                </p>
+              </div>
+
+              <!-- Honey Melon -->
+              <div
+                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
+              >
+                <span
+                  class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
+                >
+                  <img
+                    class="object-contain mt-6 size-25"
+                    src="./assets/img/main/lime3.png"
+                    alt=""
+                  />
+                </span>
+                <h3 class="mt-3 mb-0 text-base font-bold leading-6">هانی ملون</h3>
+                <p class="mt-4 mb-0 w-full text-sm leading-[18px] text-white/60">
+                  آب هانی ملون تازه، بدون پوست و هسته و شکر افزوده
+                </p>
+              </div>
+
+              <!-- Watermelon -->
+              <div
+                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
+              >
+                <span
+                  class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
+                >
+                  <img
+                    class="object-contain mt-6 size-25"
+                    src="./assets/img/main/lime4.png"
+                    alt=""
+                  />
+                </span>
+                <h3 class="mt-3 mb-0 text-base font-bold leading-6">هندوانه</h3>
+                <p class="mt-[18px] mb-0 w-full text-sm leading-[18px] font-normal text-white/60">
+                  آب هندوانه‌ی تازه، بدون پوست و هسته و شکر افزوده
+                </p>
+              </div>
+            </div>
+
+            <!-- Second row -->
+            <div class="flex w-full flex-wrap justify-between gap-x-6 gap-y-[60px]">
+              <!-- Peach -->
+              <div
+                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
+              >
+                <span
+                  class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
+                >
+                  <img
+                    class="object-contain mt-6 size-25"
+                    src="./assets/img/main/lime5.png"
+                    alt=""
+                  />
+                </span>
+                <h3 class="mt-3 mb-0 text-base font-bold leading-6">هلو</h3>
+                <p class="mt-4 mb-0 w-full text-sm leading-[18px] text-white/60">
+                  آب هلوی تازه، بدون پوست، پالپ و شکر افزوده
+                </p>
+              </div>
+
+              <!-- Pomegranate -->
+              <div
+                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
+              >
+                <span
+                  class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
+                >
+                  <img
+                    class="object-contain mt-6 size-25"
+                    src="./assets/img/main/lime6.png"
+                    alt=""
+                  />
+                </span>
+                <h3 class="mt-3 mb-0 text-base font-bold leading-6">انار</h3>
+                <p class="mt-4 mb-0 w-full text-sm leading-[18px] text-white/60">
+                  آب انار ترش و شیرین، بدون هسته‌ی گس و شکر یا نمک افزوده
+                </p>
+              </div>
+
+              <!-- Kiwi -->
+              <div
+                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
+              >
+                <span
+                  class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
+                >
+                  <img
+                    class="object-contain mt-6 size-25"
+                    src="./assets/img/main/lime7.png"
+                    alt=""
+                  />
+                </span>
+                <h3 class="mt-3 mb-0 text-base font-bold leading-[22px]">کیوی</h3>
+                <p class="mt-[18px] mb-0 w-full text-sm leading-[18px] text-white/60">
+                  ترکیب کیوی تازه‌ی پوره‌شده به همراه آب گازدار
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- End Main -->
   </body>
 </html>
