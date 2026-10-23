@@ -23,7 +23,6 @@
     <header class="sticky top-0 z-50 h-16 bg-[#e6eaeb]">
       <nav
         class="container mx-auto flex h-full w-[min(1200px,calc(100%_-_40px))] items-center justify-between"
-        aria-label="ناوبری اصلی"
       >
         <a class="h-10 w-[108px] shrink-0" href="#home" title="صفحه اصلی">
           <img
@@ -45,26 +44,29 @@
       </nav>
     </header>
     <!-- End Header -->
+
     <!-- Start Main -->
     <main>
+      <!-- Hero Section -->
       <section class="min-h-[814px] overflow-hidden">
         <div class="container relative px-5 mx-auto max-w-7xl pt-38">
-          <!-- Main title -->
           <h1
             class="absolute left-0 top-[81px] z-10 whitespace-nowrap text-left text-[300px] leading-none text-[#346e16] [font-family:Lalezar,sans-serif]"
           >
             آیسی دانکی
           </h1>
+
           <div class="relative flex items-start justify-between gap-8">
             <!-- Text and purchase button -->
             <div class="mt-[241px] flex flex-col items-end gap-[50px]">
               <p class="m-0 whitespace-nowrap text-[28px] leading-[34px] text-black/40">
                 هر روز، آبمیوه تازه
               </p>
+
               <a
                 class="flex min-h-[58px] w-[204px] items-center justify-end gap-3 rounded-[30px] bg-[#040202] px-8 py-4 text-white"
                 href="#shop"
-                title="View stores"
+                title="فروشگاه‌ها"
               >
                 <span class="whitespace-nowrap text-[18px] leading-[26px]"> همین الان بخر </span>
                 <img
@@ -76,53 +78,48 @@
                 />
               </a>
             </div>
+
             <!-- Product images -->
-            <div class="relative mt-0 size-[500px] shrink-0">
-              <!-- Yellow circle -->
+            <div class="relative size-[500px] shrink-0">
               <img class="absolute size-full" src="./assets/img/header/hero.svg" alt="" />
 
-              <!-- Background lemon -->
               <img
                 class="absolute left-[3.4%] top-[3.2%] h-[93.6%] w-[93.2%] object-cover opacity-20"
                 src="./assets/img/header/lemon.png"
                 alt=""
               />
 
-              <!-- Lime slice -->
               <img
                 class="absolute left-[11.8%] top-[23%] h-[39%] w-[38.2%] object-cover"
                 src="./assets/img/header/lime.png"
                 alt="Lime slice"
               />
 
-              <!-- Juice bottle -->
               <img
                 class="absolute left-[25.4%] top-[-17.2%] z-20 h-[114%] w-[45.8%] object-cover"
                 src="./assets/img/header/bottle.png"
                 alt="Icy Donkey juice bottle"
               />
 
-              <!-- Fresh mint leaves -->
               <img
                 class="absolute left-[21.6%] top-[15.2%] z-30 h-[18%] w-[21%] rotate-[164.34deg] object-cover"
                 src="./assets/img/header/mint.png"
                 alt="Fresh mint leaves"
               />
 
-              <!-- Kiwi fruit -->
               <img
                 class="absolute left-[32.4%] top-[50.4%] z-30 h-[50.2%] w-[51%] rotate-[-149.27deg] scale-y-[-1] object-cover"
                 src="./assets/img/header/kiwi.png"
                 alt="Fresh kiwi"
               />
 
-              <!-- Lemon slice in the foreground -->
               <img
                 class="absolute left-[64.4%] top-[29.6%] z-30 h-[23.6%] w-[25.4%] rotate-[-105deg] object-cover"
                 src="./assets/img/header/lemon.png"
                 alt="Lemon slice"
               />
             </div>
+
             <!-- Product features -->
             <ul class="mt-[241px] flex list-none flex-col gap-6 p-0">
               <li class="flex w-[238px] items-start gap-6">
@@ -131,6 +128,7 @@
                 >
                   <img class="size-8" src="./assets/img/header/vitamins.svg" alt="" />
                 </span>
+
                 <div class="flex-1 text-right">
                   <h2 class="m-0 text-xl font-bold leading-[26px]">ویتامین</h2>
                   <p class="mt-px mb-0 text-xs leading-3 text-black/40">
@@ -146,9 +144,9 @@
                 >
                   <img class="size-8" src="./assets/img/header/weight.svg" alt="" />
                 </span>
+
                 <div class="flex-1 text-right">
                   <h2 class="m-0 text-xl font-bold leading-[26px]">کاهش وزن</h2>
-
                   <p class="mt-px mb-0 text-xs leading-3 text-black/40">
                     با کم کردن مقدار شکر ورودی<br />
                     وزنت رو کم بکن
@@ -162,9 +160,9 @@
                 >
                   <img class="size-8" src="./assets/img/header/strenght.svg" alt="" />
                 </span>
+
                 <div class="flex-1 text-right">
                   <h2 class="m-0 text-xl font-bold leading-[26px]">محافظت</h2>
-
                   <p class="mt-px mb-0 text-xs leading-3 text-black/40">
                     از الان جلوی پوکی استخوان<br />
                     در کهن‌سالیت رو بگیر
@@ -175,28 +173,24 @@
           </div>
         </div>
       </section>
+
       <!-- Flavors Section -->
       <section class="container relative px-5 mx-auto max-w-7xl">
-        <!-- Section title -->
         <h2
-          class="m-0 text-center text-[clamp(36px,3.3333vw,48px)] leading-[75px] [font-family:Lalezar,sans-serif]"
           id="flavors-title"
+          class="m-0 text-center text-[clamp(36px,3.3333vw,48px)] leading-[75px] [font-family:Lalezar,sans-serif]"
         >
           طعم‌های آیسی دانکی
         </h2>
 
         <!-- Flavors container -->
         <div
-          class="mt-[99px] flex min-h-[537px] justify-center rounded-[90px] bg-[#040202] pb-[60px]"
+          class="mt-[99px] flex min-h-[537px] justify-center rounded-[90px] bg-[#040202] pb-[60px] text-white"
         >
           <div class="mt-[-75px] flex w-full max-w-[988px] flex-col gap-[60px]">
             <!-- First row -->
             <div class="flex flex-wrap justify-between w-full gap-6">
-              <!-- Honey Lemon -->
-              <div
-                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
-              >
-                >
+              <div class="flex min-h-[246px] w-[200px] flex-col items-center text-center">
                 <span
                   class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
                 >
@@ -212,10 +206,7 @@
                 </p>
               </div>
 
-              <!-- Honey Melon -->
-              <div
-                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
-              >
+              <div class="flex min-h-[246px] w-[200px] flex-col items-center text-center">
                 <span
                   class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
                 >
@@ -231,10 +222,7 @@
                 </p>
               </div>
 
-              <!-- Watermelon -->
-              <div
-                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
-              >
+              <div class="flex min-h-[246px] w-[200px] flex-col items-center text-center">
                 <span
                   class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
                 >
@@ -253,10 +241,7 @@
 
             <!-- Second row -->
             <div class="flex w-full flex-wrap justify-between gap-x-6 gap-y-[60px]">
-              <!-- Peach -->
-              <div
-                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
-              >
+              <div class="flex min-h-[246px] w-[200px] flex-col items-center text-center">
                 <span
                   class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
                 >
@@ -272,10 +257,7 @@
                 </p>
               </div>
 
-              <!-- Pomegranate -->
-              <div
-                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
-              >
+              <div class="flex min-h-[246px] w-[200px] flex-col items-center text-center">
                 <span
                   class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
                 >
@@ -291,10 +273,7 @@
                 </p>
               </div>
 
-              <!-- Kiwi -->
-              <div
-                class="flex min-h-[246px] w-[200px] flex-col items-center text-center text-white"
-              >
+              <div class="flex min-h-[246px] w-[200px] flex-col items-center text-center">
                 <span
                   class="flex size-[150px] items-start justify-center overflow-hidden rounded-full bg-[#346e16]"
                 >
@@ -313,15 +292,18 @@
           </div>
         </div>
       </section>
-      <!--End Flavors Section -->
+      <!-- End Flavors Section -->
 
       <!-- Retailers Section -->
       <section class="container mx-auto mt-40 w-full max-w-[1050px] px-5">
         <h2 class="m-0 text-center text-[75px] leading-[75px] [font-family:Lalezar,sans-serif]">
           فروشنده‌های آیسی دانکی
         </h2>
+
         <div class="mt-[50px] flex flex-col gap-[50px]">
-          <div class="flex flex-wrap justify-between w-full max-w-5xl gap-x-6 gap-y-8">
+          <div
+            class="flex flex-wrap justify-between w-full max-w-5xl text-lg font-bold leading-7 gap-x-6 gap-y-8 whitespace-nowrap"
+          >
             <a
               class="flex h-[128px] w-[238px] flex-col items-center text-center"
               href="#shop"
@@ -334,10 +316,9 @@
                 width="100"
                 height="100"
               />
-              <span class="w-full text-lg font-bold leading-7 whitespace-nowrap"
-                >فروشگاه‌های زنجیره‌ای هایپراستار</span
-              >
+              <span class="w-full">فروشگاه‌های زنجیره‌ای هایپراستار</span>
             </a>
+
             <a
               class="flex min-h-32 w-[238px] shrink-0 flex-col items-center text-center"
               href="#shop"
@@ -350,12 +331,11 @@
                 width="100"
                 height="100"
               />
-              <span class="w-full text-lg font-bold leading-7 whitespace-nowrap">
-                >فروشگاه‌های زنجیره‌ای افق کوروش</span
-              >
+              <span class="w-full">فروشگاه‌های زنجیره‌ای افق کوروش</span>
             </a>
+
             <a
-              class="flex min-h-32 w-[238px] basis-[238px] grow-0 shrink text-center flex-col items-center"
+              class="flex min-h-32 w-[238px] basis-[238px] grow-0 shrink flex-col items-center text-center"
               href="#shop"
               title="فروشگاه‌های زنجیره‌ای شهروند"
             >
@@ -366,18 +346,17 @@
                 width="100"
                 height="100"
               />
-              <span class="w-full text-lg font-bold leading-7 whitespace-nowrap">
-                >فروشگاه‌های زنجیره‌ای شهروند</span
-              >
+              <span class="w-full">فروشگاه‌های زنجیره‌ای شهروند</span>
             </a>
           </div>
+
           <div
-            class="relative flex w-full max-w-[843px] flex-wrap justify-between gap-x-6 gap-y-8 self-center"
+            class="relative flex w-full max-w-[843px] flex-wrap justify-between gap-x-6 gap-y-8 self-center whitespace-nowrap text-lg leading-7 font-bold"
           >
             <a
               class="flex min-h-32 w-[238px] basis-[238px] grow-0 shrink flex-col items-center text-center"
               href="#shop"
-              aria-label="فروشگاه اینترنتی اسنپ‌مارکت"
+              title="فروشگاه اینترنتی اسنپ‌مارکت"
             >
               <img
                 class="object-contain size-25"
@@ -386,10 +365,9 @@
                 width="100"
                 height="100"
               />
-              <span class="w-full text-lg font-bold leading-7 whitespace-nowrap">
-                >فروشگاه اینترنتی اسنپ‌مارکت</span
-              >
+              <span class="w-full">فروشگاه اینترنتی اسنپ‌مارکت</span>
             </a>
+
             <a
               class="flex min-h-32 w-[238px] basis-[238px] grow-0 shrink flex-col items-center text-center"
               href="#shop"
@@ -402,9 +380,7 @@
                 width="100"
                 height="100"
               />
-              <span class="w-full text-lg font-bold leading-7 whitespace-nowrap"
-                >فروشگاه اینترنتی دیجیکالا</span
-              >
+              <span class="w-full">فروشگاه اینترنتی دیجیکالا</span>
             </a>
           </div>
         </div>
@@ -412,5 +388,11 @@
       <!-- End Retailers Section -->
     </main>
     <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer class="flex items-start justify-center pt-32 min-h-46">
+      <p class="m-0 text-center text-sm leading-[22px] font-normal">© تمام حقوق محفوظ است</p>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>
