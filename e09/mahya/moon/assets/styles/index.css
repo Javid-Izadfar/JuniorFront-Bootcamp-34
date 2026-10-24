@@ -1,0 +1,86 @@
+:root {
+  --blue: #3b4a6b;
+  --light-gray: #cbcbcb;
+  --white: #e3e5e1;
+  --gray: #898989;
+  --darker-gray: #656565;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 980px;
+  margin: auto;
+}
+.wrapper {
+  background-color: var(--blue);
+  margin: 100px 150px;
+  border-radius: 16px;
+}
+.absolute {
+  position: absolute;
+}
+.radius-50 {
+  border-radius: 50%;
+}
+
+.moon {
+  width: 250px;
+  height: 250px;
+  background-color: var(--light-gray);
+  position: relative;
+}
+.sky {
+  padding: 125px 365px;
+}
+.white {
+  background-color: var(--white);
+  width: 227px;
+  height: 236px;
+  top: 232px;
+  left: 515px;
+}
+.gray-s {
+  background-color: var(--gray);
+  width: 13px;
+  height: 13px;
+  top: 350px;
+  left: 546px;
+}
+.gray-m {
+  width: 25px;
+  height: 25px;
+  background-color: var(--gray);
+  top: 394px;
+  left: 711px;
+}
+.gray-xl {
+  width: 34px;
+  height: 34px;
+  background-color: var(--gray);
+  top: 284px;
+  left: 583px;
+}
+.gray-xxl {
+  width: 44px;
+  height: 44px;
+  background-color: var(--gray);
+  border: solid 2px var(--darker-gray);
+  top: 372px;
+  left: 589px;
+}
+.gray-xxxl {
+  width: 51px;
+  height: 51px;
+  background-color: var(--gray);
+  border: solid 2px var(--darker-gray);
+  top: 299px;
+  left: 660px;
+}
