@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+:root {
+  --green: #346e16;
+  --black: #040202;
+  --ogray: #00000066;
+  --white: #ffffff;
+}
+
+.list-style {
+  list-style: none;
+}
+.text-deco {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-end {
+  justify-content: end;
+}
+
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: start;
+}
+.align-end {
+  align-items: end;
+}
+.gap-24 {
+  gap: 24px;
+}
+.nav-wrapper .menu li a {
+  color: var(--black);
+  font-weight: bold;
+  font-family: "VazirMatn";
+  font-size: 16px;
+}
