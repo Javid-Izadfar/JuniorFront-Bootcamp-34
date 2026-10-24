@@ -5,6 +5,12 @@ body {
   margin: 0;
   padding: 0;
   direction: rtl;
+  font-family: "VazirMatn";
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1200px;
@@ -25,6 +31,9 @@ body {
 }
 .flex {
   display: flex;
+}
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-center {
@@ -55,9 +64,75 @@ body {
 .gap-24 {
   gap: 24px;
 }
+.gap-80 {
+  gap: 80px;
+}
+header {
+  padding: 12px 0;
+}
 .nav-wrapper .menu li a {
   color: var(--black);
   font-weight: bold;
   font-family: "VazirMatn";
   font-size: 16px;
+}
+.flex-basis {
+  flex-basis: 33.33%;
+}
+.main-section {
+  margin-top: 180px;
+}
+section {
+  position: relative;
+}
+section h1 {
+  font-size: 250px;
+  font-weight: 400;
+  font-family: "Lalezar";
+  color: var(--green);
+  position: absolute;
+  right: 230px;
+  bottom: 110px;
+  z-index: 1;
+}
+.left-section-icon {
+  background-color: var(--black);
+  padding: 10px;
+  border-radius: 50%;
+}
+.lemon-full {
+  position: absolute;
+  bottom: 20px;
+  left: 500px;
+  opacity: 0.2;
+}
+.bottle {
+  position: absolute;
+  bottom: 20px;
+  left: 580px;
+  z-index: 2;
+}
+.kiwi {
+  position: absolute;
+  bottom: 30px;
+  left: 680px;
+  z-index: 2;
+}
+.lemon {
+  position: absolute;
+  bottom: 300px;
+  left: 820px;
+  z-index: 2;
+}
+.lime {
+  position: absolute;
+  bottom: 220px;
+  left: 520px;
+  z-index: 2;
+}
+.mint {
+  position: absolute;
+  bottom: 370px;
+  left: 610px;
+  z-index: 2;
 }
