@@ -41,3 +41,31 @@
   top: 276px;
   left: 321px;
 }
+
+.group-3 .shape__arm2 {
+  width: 55px;
+  height: 100px;
+  border-radius: 80px;
+  background-color: var(--color-green);
+  position: absolute;
+  top: 200px;
+  left: 575px;
+}
+
+.group-3 .shape__detail {
+  width: 50px;
+  height: 40px;
+  background-color: var(--color-green);
+  position: absolute;
+  top: 336px;
+  left: 348px;
+}
+
+.group-3 .shape__detail2 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-green);
+  position: absolute;
+  top: 250px;
+  left: 548px;
+}
