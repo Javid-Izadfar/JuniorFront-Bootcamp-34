@@ -69,3 +69,12 @@
   top: 250px;
   left: 548px;
 }
+.group-3 .shape__base {
+  width: 250px;
+  height: 75px;
+  border-radius: 18px;
+  background-color: var(--color-brown);
+  position: absolute;
+  top: 408px;
+  left: 348px;
+}
