@@ -1,3 +1,6 @@
+/* ============================= */
+/* CSS Variables */
+/* ============================= */
 :root {
   --color-sky: #4cc9f0;
   --color-green: #018951;
@@ -10,35 +13,40 @@
   --color-background: #fff4e4;
 }
 
+/* ============================= */
+/* Main Container */
+/* ============================= */
 .tasks-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding: 30px 0;
+  width: 980px;
+  max-width: 100%;
+  margin: 0 auto;
 }
+
+/* ============================= */
+/* Common Scene Styles */
+/* ============================= */
+.scene1,
+.scene2 {
+  position: relative;
+  width: 980px;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* Task 1 - Green Shape */
+/* ============================= */
 .scene1 {
-  position: relative;
-  width: 980px;
-  height: 500px;
   background-color: var(--color-sky);
-  border-radius: 16px;
-  overflow: hidden;
 }
-/* .scene2 {
-  position: relative;
-  width: 980px;
-  height: 500px;
-  background-color: var(--color-background);
-  border-radius: 16px;
-  overflow: hidden;
-} */
 
 .group-3 {
   background-color: var(--color-sky);
 }
 
+/* Shape Body */
 .group-3 .shape__body {
   width: 150px;
   height: 370px;
@@ -48,6 +56,8 @@
   top: 113px;
   left: 398px;
 }
+
+/* Left Arm */
 .group-3 .shape__arm {
   width: 55px;
   height: 100px;
@@ -58,6 +68,7 @@
   left: 321px;
 }
 
+/* Right Arm */
 .group-3 .shape__arm2 {
   width: 55px;
   height: 100px;
@@ -68,6 +79,7 @@
   left: 575px;
 }
 
+/* Left Detail */
 .group-3 .shape__detail {
   width: 50px;
   height: 40px;
@@ -77,6 +89,7 @@
   left: 348px;
 }
 
+/* Right Detail */
 .group-3 .shape__detail2 {
   width: 50px;
   height: 50px;
@@ -85,6 +98,8 @@
   top: 250px;
   left: 548px;
 }
+
+/* Shape Base */
 .group-3 .shape__base {
   width: 250px;
   height: 75px;
@@ -94,15 +109,20 @@
   top: 408px;
   left: 348px;
 }
-/* Task2 */
-.umbrella-scene {
-  position: relative;
-  width: 980px;
-  height: 500px;
+
+/* ============================= */
+/* Task 2 - Umbrella */
+/* ============================= */
+.scene2 {
   background-color: var(--color-background);
-  border-radius: 16px;
+  margin-top: 24px;
 }
 
+.umbrella-scene {
+  background-color: var(--color-background);
+}
+
+/* Umbrella Container */
 .umbrella {
   position: absolute;
   top: 95px;
@@ -110,6 +130,8 @@
   width: 700px;
   height: 305px;
 }
+
+/* Umbrella Canopy */
 .umbrella-canopy {
   position: absolute;
   width: 696px;
@@ -119,6 +141,27 @@
   border: 2px solid var(--color-red-border);
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
+
+/* Pink Canopy Sections */
+.umbrella-pink {
+  position: absolute;
+  top: -2px;
+  width: 194px;
+  height: 250px;
+  background-color: var(--color-red);
+}
+
+/* Left Pink Section */
+.umbrella-left {
+  left: -2px;
+}
+
+/* Right Pink Section */
+.umbrella-right {
+  right: -2px;
+}
+
+/* Yellow Canopy Section */
 .umbrella-yellow {
   position: absolute;
   top: -2px;
@@ -130,7 +173,9 @@
   border: 2px solid var(--color-yellow-border);
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
-.umbrella-cut {
+
+/* Canopy Bottom Waves */
+.umbrella-wave {
   position: absolute;
   bottom: -2px;
   width: 194px;
@@ -141,14 +186,23 @@
   border-radius: 50% 50% 0 0;
 }
 
-.umbrella-cut-left {
+/* Left Wave */
+.umbrella-wave-left {
   left: -2px;
 }
 
-.umbrella-cut-right {
+/* Center Wave */
+.umbrella-wave-center {
+  left: 194px;
+  width: 304px;
+}
+
+/* Right Wave */
+.umbrella-wave-right {
   right: -2px;
 }
 
+/* Umbrella Handle */
 .umbrella-handle {
   position: absolute;
   top: 248px;
