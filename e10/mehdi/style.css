@@ -26,14 +26,14 @@
   border-radius: 16px;
   overflow: hidden;
 }
-.scene2 {
+/* .scene2 {
   position: relative;
   width: 980px;
   height: 500px;
   background-color: var(--color-background);
   border-radius: 16px;
   overflow: hidden;
-}
+} */
 
 .group-3 {
   background-color: var(--color-sky);
@@ -93,4 +93,29 @@
   position: absolute;
   top: 408px;
   left: 348px;
+}
+/* Task2 */
+.umbrella-scene {
+  position: relative;
+  width: 980px;
+  height: 500px;
+  background-color: var(--color-background);
+  border-radius: 16px;
+}
+
+.umbrella {
+  position: absolute;
+  top: 95px;
+  left: 159px;
+  width: 700px;
+  height: 305px;
+}
+.umbrella-canopy {
+  position: absolute;
+  width: 696px;
+  height: 250px;
+  overflow: hidden;
+  background-color: var(--color-red);
+  border: 2px solid var(--color-red-border);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
