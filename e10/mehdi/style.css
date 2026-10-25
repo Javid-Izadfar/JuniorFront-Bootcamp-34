@@ -18,3 +18,26 @@
   border-radius: 16px;
   overflow: hidden;
 }
+
+.group-3 {
+  background-color: var(--color-sky);
+}
+
+.group-3 .shape__body {
+  width: 150px;
+  height: 370px;
+  border-radius: 80px;
+  background-color: var(--color-green);
+  position: absolute;
+  top: 113px;
+  left: 398px;
+}
+.group-3 .shape__arm {
+  width: 55px;
+  height: 100px;
+  border-radius: 80px;
+  background-color: var(--color-green);
+  position: absolute;
+  top: 276px;
+  left: 321px;
+}
