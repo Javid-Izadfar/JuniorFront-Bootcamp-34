@@ -119,3 +119,14 @@
   border: 2px solid var(--color-red-border);
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
+.umbrella-yellow {
+  position: absolute;
+  top: -2px;
+  left: 194px;
+  width: 304px;
+  height: 250px;
+  box-sizing: border-box;
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-yellow-border);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
