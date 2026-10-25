@@ -1,0 +1,20 @@
+:root {
+  --color-sky: #4cc9f0;
+  --color-green: #018951;
+  --color-red: #ff4268;
+  --color-red-border: #9e354a;
+  --color-yellow: #ffc94a;
+  --color-yellow-border: #b38b35;
+  --color-brown: #bf5846;
+  --color-handle: #a56f68;
+  --color-background: #fff4e4;
+}
+
+.scene {
+  position: relative;
+  width: 980px;
+  height: 500px;
+  background-color: var(--color-sky);
+  border-radius: 16px;
+  overflow: hidden;
+}
