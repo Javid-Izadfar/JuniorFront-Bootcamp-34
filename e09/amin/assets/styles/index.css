@@ -105,3 +105,92 @@ a {
   line-height: 26px;
   white-space: nowrap;
 }
+
+.hero-photo {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.layer {
+  position: absolute;
+  object-fit: cover;
+}
+.layer-circle {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.layer-lemon-bg {
+  left: 3.4%;
+  top: 3.2%;
+  width: 93.2%;
+  height: 93.6%;
+  opacity: 0.2;
+}
+.layer-lime {
+  left: 11.8%;
+  top: 23%;
+  width: 38.2%;
+  height: 39%;
+}
+.layer-bottle {
+  left: 25.4%;
+  top: -17.2%;
+  width: 45.8%;
+  height: 114%;
+  z-index: 20;
+}
+.layer-mint {
+  left: 21.6%;
+  top: 15.2%;
+  width: 21%;
+  height: 18%;
+  z-index: 30;
+}
+.layer-kiwi {
+  left: 32.4%;
+  top: 50.4%;
+
+  height: 50.2%;
+  z-index: 30;
+  transform: rotate(40deg);
+}
+.layer-lemon-wedge {
+  left: 64.4%;
+  top: 29.6%;
+  width: 25.4%;
+  height: 23.6%;
+  z-index: 30;
+  transform: rotate(-15deg);
+}
+
+.features {
+  padding: 0;
+  margin: 280px 0 0 0;
+  gap: 24px;
+  list-style: none;
+}
+.feature {
+  width: 238px;
+  gap: 24px;
+}
+.feature-icon {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: var(--surface-dark);
+}
+
+.feature-title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.feature-text {
+  margin: 1px 0 0 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--text-muted);
+}
