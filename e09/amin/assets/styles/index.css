@@ -246,3 +246,34 @@ a {
   line-height: 18px;
   color: var(--text-inverse-muted);
 }
+
+.retailers {
+  margin-top: 160px;
+}
+.retailers-inner {
+  width: 1050px;
+  margin: auto;
+}
+.retailers-row {
+  margin-top: 50px;
+}
+.retailers-row-second {
+  width: 843px;
+  margin: 50px auto 0 auto;
+}
+.retailer {
+  width: 238px;
+  text-align: center;
+}
+.retailer-img {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.retailer-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  white-space: nowrap;
+}
