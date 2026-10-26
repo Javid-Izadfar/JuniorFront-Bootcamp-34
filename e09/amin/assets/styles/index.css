@@ -62,3 +62,46 @@ a {
   font-size: 16px;
   font-weight: 500;
 }
+.hero-inner {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  padding: 152px 0 162px 0;
+}
+.hero-title {
+  position: absolute;
+  top: 81px;
+  left: -24px;
+  z-index: 10;
+  margin: 0;
+  font-size: 300px;
+  font-weight: normal;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--primary);
+}
+.hero-row {
+  width: 1190px;
+  margin-left: -33px;
+}
+.hero-side {
+  margin-top: 246px;
+}
+.hero-slogan {
+  margin: 0 0 55px 0;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.buy-btn {
+  width: 204px;
+  padding: 16px 32px;
+  gap: 12px;
+  border-radius: 30px;
+  background-color: var(--surface-dark);
+  color: var(--text-inverse);
+  font-size: 18px;
+  line-height: 26px;
+  white-space: nowrap;
+}
