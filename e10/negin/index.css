@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+}
+
+:root {
+  --black: #000;
+
+  --white-100: #ebebeb;
+  --white-200: #f0f0f0;
+  --white-400: #fff4e4;
+
+  --gray-100: #e3e5e1;
+  --gray-200: #d9d9d9;
+  --gray-300: #cbcbcb;
+  --gray-700: #898989;
+  --gray-800: #656565;
+
+  --blue-200: #4cc9f0;
+  --blue-300: #46c3db;
+  --blue-900: #3b4a6b;
+
+  --green: #018951;
+
+  --yellow-300: #ffc754;
+  --yellow-400: #be9238;
+
+  --brown-400: #bf5846;
+  --brown-500: #9c6d6d;
+
+  --pink-500: #ff4f73;
+  --pink-800: #993045;
+
+  --sky-day: var(--blue-300);
+  --cloud-light: var(--white-200);
+  --cloud-dark: var(--gray-200);
+
+  --sky-night: var(--blue-900);
+  --moon-shine: var(--gray-100);
+  --moon-light: var(--gray-300);
+  --moon-dark: var(--gray-700);
+  --moon-darker: var(--gray-800);
+
+  --cactus-bg: var(--blue-200);
+  --cactus: var(--green);
+  --vase: var(--brown-400);
+
+  --umbrella-bg: var(--white-400);
+  --umbrella-pink-1: var(--pink-500);
+  --umbrella-pink-2: var(--pink-800);
+  --umbrella-yellow-1: var(--yellow-300);
+  --umbrella-yellow-2: var(--yellow-400);
+  --umbrella-brown: var(--brown-500);
+}
+
+.container {
+  width: 980px;
+  margin: auto;
+}
+
+h2 {
+  margin-top: -30px;
+  color: var(--white-100);
+  opacity: 50%;
+}
+
+.white {
+  margin: 100px 100px;
+  --size: 1280px;
+  width: var(--size);
+  height: calc(var(--size) / 1.54);
+  background-color: var(--white-100);
+}
+.flex {
+  display: flex;
+  width: 2960px;
+  flex-wrap: wrap;
+}
+
+.scene {
+  margin: 116.71px 0;
+  height: 500px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.bg--1 {
+  background-color: var(--sky-day);
+}
+.cloud--1 {
+  position: absolute;
+  top: 130px;
+  left: 318px;
+}
+.cloud--1 .shape-wrapper {
+  position: relative;
+}
+.cloud--1 .shape--1 {
+  --size: 240px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 120px;
+  background-color: var(--cloud-light);
+  position: absolute;
+  left: 96px;
+  z-index: 1;
+}
+.cloud--1 .shape--2 {
+  --size: 274px;
+  width: var(--size);
+  aspect-ratio: 2.1;
+  border-radius: 65px;
+  background-color: var(--cloud-light);
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+}
+.cloud--1 .shape--3 {
+  --size: 100px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--cloud-dark);
+  position: absolute;
+  top: 60px;
+  left: 51px;
+}
+.cloud--2 {
+  position: absolute;
+  top: 186px;
+  left: 244px;
+}
+.cloud--2 .shape--1 {
+  --size: 54px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--cloud-light);
+}
+.cloud--2 .shape--2 {
+  --size: 64px;
+  width: var(--size);
+  aspect-ratio: 2;
+  border-radius: 30px;
+  background-color: var(--cloud-light);
+  margin-top: -32px;
+  margin-left: 11px;
+}
+.cloud--3 {
+  position: absolute;
+  top: 318px;
+  left: 665px;
+}
+.cloud--3 .shape--1 {
+  --size: 40px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--cloud-light);
+  margin-left: calc(var(--size) / 2);
+}
+.cloud--3 .shape--2 {
+  --size: 80px;
+  width: var(--size);
+  aspect-ratio: 2;
+  border-radius: 29px;
+  background-color: var(--cloud-light);
+  margin-top: calc(var(--size) / -4);
+}
+
+.bg--2 {
+  background-color: var(--sky-night);
+}
+.moon {
+  --size: 250px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--moon-light);
+  position: absolute;
+  top: 113px;
+  left: 365px;
+}
+.moon .shape-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.moon .shine {
+  width: 227px;
+  height: 236px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-shine);
+  margin-top: 15px;
+  position: absolute;
+  z-index: 0;
+}
+.moon .shape--1 {
+  --size: 34px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  margin-top: 71px;
+  margin-left: 68px;
+}
+.moon .shape--2 {
+  --size: 51px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  border: 2px solid var(--moon-darker);
+  margin-top: -15px;
+  margin-left: 145px;
+}
+.moon .shape--3 {
+  --size: 13px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  margin-top: 2px;
+  margin-left: 31px;
+}
+.moon .shape--4 {
+  --size: 44px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  border: 2px solid var(--moon-darker);
+  margin-top: 9px;
+  margin-left: 74px;
+}
+.moon .shape--5 {
+  --size: 25px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  margin-top: -20px;
+  margin-left: 186px;
+}
+
+.bg--3 {
+  background-color: var(--cactus-bg);
+}
+.cactus {
+  width: 342px;
+  height: 370px;
+  position: absolute;
+  top: 113.29px;
+  left: 320.61px;
+}
+.cactus .shape-wrapper {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+.cactus .shape--1 {
+  --size: 150px;
+  width: var(--size);
+  aspect-ratio: 0.405;
+  border-radius: 80px;
+  background-color: var(--cactus);
+  order: 2;
+}
+.cactus .right {
+  --size: 115px;
+  width: var(--size);
+  height: 150px;
+  margin-top: 54px;
+  order: 3;
+}
+.cactus .shape--2 {
+  --size: 70px;
+  width: var(--size);
+  height: 150px;
+  border-radius: 80px;
+  background-color: var(--cactus);
+  margin-left: 45px;
+}
+.cactus .shape--3 {
+  --size: 80px;
+  width: var(--size);
+  height: 60px;
+  background-color: var(--cactus);
+  margin-top: -60px;
+}
+.cactus .angle--1 {
+  --size: 26px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50px;
+  background-color: var(--cactus-bg);
+  position: absolute;
+  top: 118px;
+  left: 246px;
+  z-index: 1;
+}
+.cactus .angle--2 {
+  --size: 13px;
+  width: var(--size);
+  aspect-ratio: 1;
+  background-color: var(--cactus);
+  position: absolute;
+  top: 131px;
+  left: 259px;
+  z-index: 0;
+}
+.cactus .left {
+  --size: 77px;
+  width: var(--size);
+  height: 100px;
+  margin-top: 163px;
+  order: 1;
+}
+.cactus .shape--4 {
+  --size: 55px;
+  width: var(--size);
+  height: 100px;
+  border-radius: 80px;
+  background-color: var(--cactus);
+}
+.cactus .shape--5 {
+  --size: 50px;
+  width: var(--size);
+  height: 40px;
+  background-color: var(--cactus);
+  margin-top: -40px;
+  margin-left: 27px;
+}
+.cactus .angle--3 {
+  --size: 10px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50px;
+  background-color: var(--cactus-bg);
+  position: absolute;
+  top: 213px;
+  left: 55px;
+  z-index: 1;
+}
+.cactus .angle--4 {
+  --size: 5px;
+  width: var(--size);
+  aspect-ratio: 1;
+  background-color: var(--cactus);
+  position: absolute;
+  top: 218px;
+  left: 55px;
+  z-index: 0;
+}
+.cactus .shape--6 {
+  --size: 250px;
+  width: var(--size);
+  height: 75px;
+  border-radius: 18px;
+  background-color: var(--vase);
+  position: absolute;
+  top: 295px;
+  left: 27px;
+}
+
+.bg--4 {
+  background-color: var(--umbrella-bg);
+}
+.umbrella {
+  position: absolute;
+  top: 110px;
+  left: 295px;
+}
+.umbrella .shape--1 {
+  --size: 390px;
+  width: var(--size);
+  height: 280px;
+  border: 2px solid var(--umbrella-pink-2);
+  background-color: var(--umbrella-pink-1);
+  border-radius: 50%;
+}
+.umbrella .shape--2 {
+  width: 172px;
+  height: 280px;
+  border-radius: 50%;
+  border: 2px solid var(--umbrella-yellow-2);
+  background-color: var(--umbrella-yellow-1);
+  margin: 0 109px;
+}
+.umbrella .shape--3 {
+  width: 170px;
+  height: 60px;
+  border: 2px solid var(--umbrella-yellow-2);
+  background-color: var(--umbrella-bg);
+  border-radius: 50% 50% 0 0;
+}
+.umbrella .shape--4 {
+  width: 110px;
+  height: 60px;
+  border: 2px solid var(--umbrella-pink-2);
+  background-color: var(--umbrella-bg);
+  border-radius: 50% 50% 0 0;
+}
+.umbrella .middle {
+  display: flex;
+  position: absolute;
+  top: 109px;
+  left: 0;
+}
+.umbrella .shape--5 {
+  width: 390px;
+  height: 141px;
+  background-color: var(--umbrella-bg);
+  position: absolute;
+  top: 141px;
+}
+.umbrella .shape--6 {
+  width: 12px;
+  height: 169px;
+  background-color: var(--umbrella-brown);
+  position: absolute;
+  bottom: 0px;
+  left: 189px;
+  z-index: 1;
+}
