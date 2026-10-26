@@ -41,10 +41,10 @@ body {
   --cloud-dark: var(--gray-200);
 
   --sky-night: var(--blue-900);
-  --moon-light: var(--gray-100);
+  --moon-shine: var(--gray-100);
+  --moon-light: var(--gray-300);
   --moon-dark: var(--gray-700);
   --moon-darker: var(--gray-800);
-  --moon-shine: var(--gray-300);
 
   --cactus-bg: var(--blue-200);
   --cactus: var(--green);
@@ -175,6 +175,78 @@ h2 {
 .bg--2 {
   background-color: var(--sky-night);
 }
+.moon {
+  --size: 250px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--moon-light);
+  position: absolute;
+  top: 113px;
+  left: 365px;
+}
+.moon .shape-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.moon .shine {
+  width: 227px;
+  height: 236px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-shine);
+  margin-top: 15px;
+  position: absolute;
+  z-index: 0;
+}
+.moon .shape--1 {
+  --size: 34px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  margin-top: 71px;
+  margin-left: 68px;
+}
+.moon .shape--2 {
+  --size: 51px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  border: 2px solid var(--moon-darker);
+  margin-top: -15px;
+  margin-left: 145px;
+}
+.moon .shape--3 {
+  --size: 13px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  margin-top: 2px;
+  margin-left: 31px;
+}
+.moon .shape--4 {
+  --size: 44px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  border: 2px solid var(--moon-darker);
+  margin-top: 9px;
+  margin-left: 74px;
+}
+.moon .shape--5 {
+  --size: 25px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--moon-dark);
+  margin-top: -20px;
+  margin-left: 186px;
+}
+
 .bg--3 {
   background-color: var(--cactus-bg);
 }
