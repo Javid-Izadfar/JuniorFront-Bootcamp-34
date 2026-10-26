@@ -48,3 +48,17 @@ a {
 .align-start {
   align-items: start;
 }
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 12px 0;
+  background-color: var(--bg);
+}
+.nav {
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
