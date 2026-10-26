@@ -37,7 +37,7 @@ body {
   --pink-800: #993045;
 
   --sky-day: var(--blue-300);
-  --cloud-1: var(--white-200);
+  --cloud-light: var(--white-200);
   --cloud-dark: var(--gray-200);
 
   --sky-night: var(--blue-900);
@@ -85,11 +85,93 @@ h2 {
   margin: 116.71px 0;
   height: 500px;
   border-radius: 16px;
+  position: relative;
 }
 
 .bg--1 {
   background-color: var(--sky-day);
 }
+.cloud--1 {
+  position: absolute;
+  top: 130px;
+  left: 318px;
+}
+.cloud--1 .shape-wrapper {
+  position: relative;
+}
+.cloud--1 .shape--1 {
+  --size: 240px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 120px;
+  background-color: var(--cloud-light);
+  position: absolute;
+  left: 96px;
+  z-index: 1;
+}
+.cloud--1 .shape--2 {
+  --size: 274px;
+  width: var(--size);
+  aspect-ratio: 2.1;
+  border-radius: 65px;
+  background-color: var(--cloud-light);
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+}
+.cloud--1 .shape--3 {
+  --size: 100px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--cloud-dark);
+  position: absolute;
+  top: 60px;
+  left: 51px;
+}
+.cloud--2 {
+  position: absolute;
+  top: 186px;
+  left: 244px;
+}
+.cloud--2 .shape--1 {
+  --size: 54px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--cloud-light);
+}
+.cloud--2 .shape--2 {
+  --size: 64px;
+  width: var(--size);
+  aspect-ratio: 2;
+  border-radius: 30px;
+  background-color: var(--cloud-light);
+  margin-top: -32px;
+  margin-left: 11px;
+}
+.cloud--3 {
+  position: absolute;
+  top: 318px;
+  left: 665px;
+}
+.cloud--3 .shape--1 {
+  --size: 40px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--cloud-light);
+  margin-left: calc(var(--size) / 2);
+}
+.cloud--3 .shape--2 {
+  --size: 80px;
+  width: var(--size);
+  aspect-ratio: 2;
+  border-radius: 29px;
+  background-color: var(--cloud-light);
+  margin-top: calc(var(--size) / -4);
+}
+
 .bg--2 {
   background-color: var(--sky-night);
 }
