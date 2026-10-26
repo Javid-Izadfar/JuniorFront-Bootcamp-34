@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-700: #474c59;
+
+  --dark-100: #0000001a;
+  --dark-300: #0000004d;
+
+  --black: #131026;
+
+  --light-300: #d9d1c7;
+
+  --bg-main: var(--gray-700);
+  --bg-footer: var(--dark-100);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.bg-main {
+  background-color: var(--bg-main);
+}
+.bg-footer {
+  background-color: var(--bg-footer);
+}
