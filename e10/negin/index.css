@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-100: #ebebeb;
+  --white-300: #fff4e4;
+
+  --blue-200: #4cc9f0;
+
+  --green: #018951;
+
+  --yellow-300: #ffc754;
+  --yellow-400: #be9238;
+
+  --brown-400: #bf5846;
+  --brown-500: #9c6d6d;
+
+  --pink-500: #ff4f73;
+  --pink-800: #993045;
+
+  --cactus-bg: var(--blue-200);
+  --cactus: var(--green);
+  --vase: var(--brown-400);
+
+  --umbrella-bg: var(--white-300);
+  --umbrella-collor-1: var(--pink-500);
+  --umbrella-collor-2: var(--yellow-300);
+  --umbrella-collor-3: var(--yellow-400);
+  --umbrella-collor-4: var(--brown-500);
+}
