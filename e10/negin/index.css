@@ -10,10 +10,20 @@ body {
 
 :root {
   --black: #000;
+
   --white-100: #ebebeb;
-  --white-300: #fff4e4;
+  --white-200: #f0f0f0;
+  --white-400: #fff4e4;
+
+  --gray-100: #e3e5e1;
+  --gray-200: #d9d9d9;
+  --gray-300: #cbcbcb;
+  --gray-700: #898989;
+  --gray-800: #656565;
 
   --blue-200: #4cc9f0;
+  --blue-300: #46c3db;
+  --blue-900: #3b4a6b;
 
   --green: #018951;
 
@@ -26,18 +36,28 @@ body {
   --pink-500: #ff4f73;
   --pink-800: #993045;
 
+  --sky-day: var(--blue-300);
+  --cloud-1: var(--white-200);
+  --cloud-dark: var(--gray-200);
+
+  --sky-night: var(--blue-900);
+  --moon-light: var(--gray-100);
+  --moon-dark: var(--gray-700);
+  --moon-darker: var(--gray-800);
+  --moon-shine: var(--gray-300);
+
   --cactus-bg: var(--blue-200);
   --cactus: var(--green);
   --vase: var(--brown-400);
 
-  --umbrella-bg: var(--white-300);
-  --umbrella-collor-1: var(--pink-500);
-  --umbrella-collor-2: var(--yellow-300);
-  --umbrella-collor-3: var(--yellow-400);
-  --umbrella-collor-4: var(--brown-500);
+  --umbrella-bg: var(--white-400);
+  --umbrella-color-1: var(--pink-500);
+  --umbrella-color-2: var(--yellow-300);
+  --umbrella-color-3: var(--yellow-400);
+  --umbrella-color-4: var(--brown-500);
 }
 
-.cintainer {
+.container {
   width: 980px;
   margin: auto;
 }
@@ -49,7 +69,7 @@ h2 {
 }
 
 .white {
-  margin: 116.71px 132.61px;
+  margin: 100px 100px;
   --size: 1280px;
   width: var(--size);
   height: calc(var(--size) / 1.54);
@@ -57,10 +77,25 @@ h2 {
 }
 .flex {
   display: flex;
-  width: 3090.44px;
+  width: 2960px;
   flex-wrap: wrap;
 }
 
-.scene-3 {
+.scene {
+  margin: 116.71px 0;
+  height: 500px;
+  border-radius: 16px;
+}
+
+.bg--1 {
+  background-color: var(--sky-day);
+}
+.bg--2 {
+  background-color: var(--sky-night);
+}
+.bg--3 {
   background-color: var(--cactus-bg);
+}
+.bg--4 {
+  background-color: var(--umbrella-bg);
 }
