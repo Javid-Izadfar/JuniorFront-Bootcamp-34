@@ -51,10 +51,11 @@ body {
   --vase: var(--brown-400);
 
   --umbrella-bg: var(--white-400);
-  --umbrella-color-1: var(--pink-500);
-  --umbrella-color-2: var(--yellow-300);
-  --umbrella-color-3: var(--yellow-400);
-  --umbrella-color-4: var(--brown-500);
+  --umbrella-pink-1: var(--pink-500);
+  --umbrella-pink-2: var(--pink-800);
+  --umbrella-yellow-1: var(--yellow-300);
+  --umbrella-yellow-2: var(--yellow-400);
+  --umbrella-brown: var(--brown-500);
 }
 
 .container {
@@ -282,14 +283,14 @@ h2 {
   width: var(--size);
   height: 150px;
   border-radius: 80px;
-  background-color: var(--green);
+  background-color: var(--cactus);
   margin-left: 45px;
 }
 .cactus .shape--3 {
   --size: 80px;
   width: var(--size);
   height: 60px;
-  background-color: var(--green);
+  background-color: var(--cactus);
   margin-top: -60px;
 }
 .cactus .angle--1 {
@@ -307,7 +308,7 @@ h2 {
   --size: 13px;
   width: var(--size);
   aspect-ratio: 1;
-  background-color: var(--green);
+  background-color: var(--cactus);
   position: absolute;
   top: 131px;
   left: 259px;
@@ -325,13 +326,13 @@ h2 {
   width: var(--size);
   height: 100px;
   border-radius: 80px;
-  background-color: var(--green);
+  background-color: var(--cactus);
 }
 .cactus .shape--5 {
   --size: 50px;
   width: var(--size);
   height: 40px;
-  background-color: var(--green);
+  background-color: var(--cactus);
   margin-top: -40px;
   margin-left: 27px;
 }
@@ -350,7 +351,7 @@ h2 {
   --size: 5px;
   width: var(--size);
   aspect-ratio: 1;
-  background-color: var(--green);
+  background-color: var(--cactus);
   position: absolute;
   top: 218px;
   left: 55px;
@@ -369,4 +370,61 @@ h2 {
 
 .bg--4 {
   background-color: var(--umbrella-bg);
+}
+.umbrella {
+  position: absolute;
+  top: 110px;
+  left: 295px;
+}
+.umbrella .shape--1 {
+  --size: 390px;
+  width: var(--size);
+  height: 280px;
+  border: 2px solid var(--umbrella-pink-2);
+  background-color: var(--umbrella-pink-1);
+  border-radius: 50%;
+}
+.umbrella .shape--2 {
+  width: 172px;
+  height: 280px;
+  border-radius: 50%;
+  border: 2px solid var(--umbrella-yellow-2);
+  background-color: var(--umbrella-yellow-1);
+  margin: 0 109px;
+}
+.umbrella .shape--3 {
+  width: 170px;
+  height: 60px;
+  border: 2px solid var(--umbrella-yellow-2);
+  background-color: var(--umbrella-bg);
+  border-radius: 50% 50% 0 0;
+}
+.umbrella .shape--4 {
+  width: 110px;
+  height: 60px;
+  border: 2px solid var(--umbrella-pink-2);
+  background-color: var(--umbrella-bg);
+  border-radius: 50% 50% 0 0;
+}
+.umbrella .middle {
+  display: flex;
+  position: absolute;
+  top: 109px;
+  left: 0;
+}
+.umbrella .shape--5 {
+  width: 390px;
+  height: 141px;
+  background-color: var(--umbrella-bg);
+  position: absolute;
+  top: 141px;
+}
+.umbrella .shape--6 {
+  width: 12px;
+  height: 169px;
+  background-color: var(--umbrella-brown);
+  position: absolute;
+  bottom: 0px;
+  left: 189px;
+  z-index: 1;
 }
