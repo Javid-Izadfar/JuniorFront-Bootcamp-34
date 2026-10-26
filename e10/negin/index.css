@@ -5,9 +5,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--black);
 }
 
 :root {
+  --black: #000;
   --white-100: #ebebeb;
   --white-300: #fff4e4;
 
@@ -33,4 +35,32 @@ body {
   --umbrella-collor-2: var(--yellow-300);
   --umbrella-collor-3: var(--yellow-400);
   --umbrella-collor-4: var(--brown-500);
+}
+
+.cintainer {
+  width: 980px;
+  margin: auto;
+}
+
+h2 {
+  margin-top: -30px;
+  color: var(--white-100);
+  opacity: 50%;
+}
+
+.white {
+  margin: 116.71px 132.61px;
+  --size: 1280px;
+  width: var(--size);
+  height: calc(var(--size) / 1.54);
+  background-color: var(--white-100);
+}
+.flex {
+  display: flex;
+  width: 3090.44px;
+  flex-wrap: wrap;
+}
+
+.scene-3 {
+  background-color: var(--cactus-bg);
 }
