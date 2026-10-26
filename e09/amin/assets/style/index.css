@@ -1,0 +1,50 @@
+:root {
+  --mist: #e6eaeb;
+  --ink: #040202;
+  --ink-soft: #8a8c8d;
+  --white: #ffffff;
+  --white-soft: #999999;
+  --green: #346e16;
+
+  --bg: var(--mist);
+  --text: var(--ink);
+  --text-muted: var(--ink-soft);
+  --text-inverse: var(--white);
+  --text-inverse-muted: var(--white-soft);
+  --surface-dark: var(--ink);
+  --primary: var(--green);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: start;
+}
