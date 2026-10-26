@@ -277,3 +277,13 @@ a {
   line-height: 28px;
   white-space: nowrap;
 }
+
+.footer {
+  padding: 128px 0 34px 0;
+  text-align: center;
+}
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
