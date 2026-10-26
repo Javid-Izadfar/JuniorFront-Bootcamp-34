@@ -250,6 +250,123 @@ h2 {
 .bg--3 {
   background-color: var(--cactus-bg);
 }
+.cactus {
+  width: 342px;
+  height: 370px;
+  position: absolute;
+  top: 113.29px;
+  left: 320.61px;
+}
+.cactus .shape-wrapper {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+.cactus .shape--1 {
+  --size: 150px;
+  width: var(--size);
+  aspect-ratio: 0.405;
+  border-radius: 80px;
+  background-color: var(--cactus);
+  order: 2;
+}
+.cactus .right {
+  --size: 115px;
+  width: var(--size);
+  height: 150px;
+  margin-top: 54px;
+  order: 3;
+}
+.cactus .shape--2 {
+  --size: 70px;
+  width: var(--size);
+  height: 150px;
+  border-radius: 80px;
+  background-color: var(--green);
+  margin-left: 45px;
+}
+.cactus .shape--3 {
+  --size: 80px;
+  width: var(--size);
+  height: 60px;
+  background-color: var(--green);
+  margin-top: -60px;
+}
+.cactus .angle--1 {
+  --size: 26px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50px;
+  background-color: var(--cactus-bg);
+  position: absolute;
+  top: 118px;
+  left: 246px;
+  z-index: 1;
+}
+.cactus .angle--2 {
+  --size: 13px;
+  width: var(--size);
+  aspect-ratio: 1;
+  background-color: var(--green);
+  position: absolute;
+  top: 131px;
+  left: 259px;
+  z-index: 0;
+}
+.cactus .left {
+  --size: 77px;
+  width: var(--size);
+  height: 100px;
+  margin-top: 163px;
+  order: 1;
+}
+.cactus .shape--4 {
+  --size: 55px;
+  width: var(--size);
+  height: 100px;
+  border-radius: 80px;
+  background-color: var(--green);
+}
+.cactus .shape--5 {
+  --size: 50px;
+  width: var(--size);
+  height: 40px;
+  background-color: var(--green);
+  margin-top: -40px;
+  margin-left: 27px;
+}
+.cactus .angle--3 {
+  --size: 10px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50px;
+  background-color: var(--cactus-bg);
+  position: absolute;
+  top: 213px;
+  left: 55px;
+  z-index: 1;
+}
+.cactus .angle--4 {
+  --size: 5px;
+  width: var(--size);
+  aspect-ratio: 1;
+  background-color: var(--green);
+  position: absolute;
+  top: 218px;
+  left: 55px;
+  z-index: 0;
+}
+.cactus .shape--6 {
+  --size: 250px;
+  width: var(--size);
+  height: 75px;
+  border-radius: 18px;
+  background-color: var(--vase);
+  position: absolute;
+  top: 295px;
+  left: 27px;
+}
+
 .bg--4 {
   background-color: var(--umbrella-bg);
 }
