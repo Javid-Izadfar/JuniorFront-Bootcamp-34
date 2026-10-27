@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --vazir-matn: "Vazirmatn";
+    --body-color: #E6EAEB;
+    --lalezar: "Lalezar";
+    --font-color: #346E16;
+    --ellipse: #F4B10D;
+
+    --primary: var(--body-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+.container {
+    width: 1265px;
+    margin: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 19.5px 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--vazir-matn);
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.logo {
+    margin: 12px 0;
+}
+
+nav {
+    margin-bottom: 66px;
+}
+
+h1 {
+    font-family: var(--lalezar);
+    margin: 0;
+    font-weight: 400;
+    font-size: 300px;
+    color: var(--font-color);
+    position: relative;
+    z-index: 1;
+}
+
+
+.bottle {
+    position: absolute;
+    z-index: 2;
+    top: 130px;
+    left: 574px;
+ }
+
+ .ellipse {
+    width: 500px;
+    height: 500px;
+    background-color: var(--ellipse);
+    border-radius: 50%;
+    position: absolute;
+    top: 216px;
+    left: 447px;
+
+ }
