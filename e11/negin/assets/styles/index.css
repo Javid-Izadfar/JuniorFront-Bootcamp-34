@@ -102,11 +102,19 @@ body {
   color: var(--btn-color);
   border: 2px solid var(--btn-color);
   border-radius: 4px;
+  color: var(--btn-color);
+}
+.btn:hover,
+.icon:hover {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  path {
+    fill: var(--text-color);
+  }
 }
 .btn-text {
   font-weight: 700;
   font-size: 14px;
-  color: var(--btn-color);
 }
 
 .headings {
