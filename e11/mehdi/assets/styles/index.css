@@ -152,3 +152,45 @@ body {
   gap: 15px;
   width: 500px;
 }
+
+.album-meta {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1.2;
+}
+.album-description {
+  width: 500px;
+  margin: 0;
+  color: var(--color-text-subtle);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/* Spotify Button */
+
+.spotify-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  border: 2px solid var(--color-dark);
+  border-radius: 4px;
+  color: var(--color-dark);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.spotify-button img {
+  width: 24px;
+  height: 24px;
+}
+.spotify-button:hover {
+  background: var(--color-dark);
+  color: var(--color-text);
+}
