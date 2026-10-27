@@ -106,3 +106,54 @@ body {
   font-size: 14px;
   color: var(--btn-color);
 }
+
+.headings {
+  margin: 0 0 24 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-color);
+}
+.tracks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tracks-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tracks-line {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--text-color) 0px,
+    var(--text-color) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  opacity: 15%;
+}
+.number-list {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: var(--text-color);
+  opacity: 50%;
+}
+.name-list {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  color: var(--text-color);
+}
+.time-list {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: var(--text-color);
+  opacity: 50%;
+}
