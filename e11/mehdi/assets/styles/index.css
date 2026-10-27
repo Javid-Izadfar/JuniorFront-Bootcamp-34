@@ -24,3 +24,17 @@
   --transition-duration: 0.6s;
   --transition-easing: ease;
 }
+/* =========================
+   Reset & Body
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+}
