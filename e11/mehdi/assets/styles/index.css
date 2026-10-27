@@ -253,3 +253,25 @@ body {
 .track-duration {
   text-align: right;
 }
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+  width: 1000px;
+}
+.album-card {
+  display: flex;
+  flex: 0 0 232px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--color-card-background);
+  transition: background-color 0.3s ease;
+}
+
+.album-card:hover {
+  background: var(--color-card-hover);
+}
