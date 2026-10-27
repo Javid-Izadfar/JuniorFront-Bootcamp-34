@@ -1,0 +1,26 @@
+/* =========================
+   Variables
+========================= */
+
+:root {
+  --color-background: #474c59;
+  --color-text: #d9d1c7;
+  --color-dark: #131026;
+
+  --color-text-muted: rgba(217, 209, 199, 0.5);
+  --color-text-subtle: rgba(217, 209, 199, 0.4);
+  --color-line: rgba(217, 209, 199, 0.55);
+
+  --color-card-background: rgba(0, 0, 0, 0.1);
+  --color-card-hover: rgba(0, 0, 0, 0.25);
+
+  --shadow-cover: 2px 2px 25px rgba(0, 0, 0, 0.2);
+  --shadow-cover-hover: 12px 12px 30px rgba(0, 0, 0, 0.35);
+  --shadow-album-card: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  --font-primary: 'Lato', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --transition-duration: 0.6s;
+  --transition-easing: ease;
+}
