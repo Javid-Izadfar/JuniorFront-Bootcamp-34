@@ -14,6 +14,7 @@
 
   --bg-main: var(--gray-700);
   --bg-footer: var(--dark-100);
+  --bg-album: var(--dark-300);
 
   --text-color: var(--light-300);
   --btn-color: var(--black);
@@ -23,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Lato;
-  width: 1536px;
+  /* width: 1536px; */
 }
 
 .container {
@@ -33,6 +34,10 @@ body {
 
 .bg-main {
   background-color: var(--bg-main);
+}
+
+.link-style {
+  text-decoration: none;
 }
 
 .hero-flex {
@@ -176,6 +181,9 @@ body {
   padding: 16px;
   text-align: center;
 }
+.albums-item:hover {
+  background-color: var(--bg-album);
+}
 .albums-title {
   margin-top: 16px;
   display: block;
@@ -188,6 +196,7 @@ body {
   background-color: var(--bg-footer);
   text-align: center;
   padding: 24px 0;
+  min-width: 1000px;
 }
 .dev-span {
   font-weight: 400;
