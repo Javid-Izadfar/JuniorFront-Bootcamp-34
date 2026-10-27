@@ -34,9 +34,6 @@ body {
 .bg-main {
   background-color: var(--bg-main);
 }
-.bg-footer {
-  background-color: var(--bg-footer);
-}
 
 .hero-flex {
   display: flex;
@@ -114,6 +111,10 @@ body {
   font-size: 32px;
   color: var(--text-color);
 }
+.tracks-section {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
 .tracks-list {
   list-style: none;
   padding: 0;
@@ -156,4 +157,45 @@ body {
   letter-spacing: 4px;
   color: var(--text-color);
   opacity: 50%;
+}
+
+.albums-section {
+  padding: 60px 0;
+  margin-bottom: 60px;
+}
+.albums-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.albums-item {
+  background-color: var(--bg-footer);
+  padding: 16px;
+  text-align: center;
+}
+.albums-title {
+  margin-top: 16px;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: var(--bg-footer);
+  text-align: center;
+  padding: 24px 0;
+}
+.dev-span {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+}
+.name-span {
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--black);
 }
