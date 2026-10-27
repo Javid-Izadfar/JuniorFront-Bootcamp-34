@@ -126,9 +126,15 @@ body {
   margin: 0;
 }
 .tracks-item {
+  padding: 6px 0;
+}
+.tracks-link {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.tracks-link:hover {
+  gap: 12px;
 }
 .tracks-line {
   flex: 1;
