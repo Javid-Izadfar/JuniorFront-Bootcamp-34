@@ -24,6 +24,7 @@
   --transition-duration: 0.6s;
   --transition-easing: ease;
 }
+
 /* =========================
    Reset & Body
 ========================= */
@@ -38,6 +39,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-primary);
 }
+
 /* =========================
    Header
 ========================= */
@@ -53,24 +55,22 @@ body {
   padding: 24px 0;
   background: var(--color-background);
 }
+
 .header p {
   margin: 0;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
 }
+
 /* =========================
-   Container
+   Page Layout
 ========================= */
 .container {
   width: 1000px;
   margin: 80px auto 0;
 }
-
-/* =========================
-   Page
-========================= */
-.page {
+page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,6 +99,7 @@ body {
   height: 300px;
   perspective: 1000px;
 }
+
 /* Vinyl Disc & Overlay */
 
 .vinyl-disc,
@@ -110,6 +111,14 @@ body {
   height: 93.34%;
   transform: translateX(0) rotateY(0);
   transition: transform var(--transition-duration) var(--transition-easing);
+}
+
+.vinyl-disc {
+  object-fit: cover;
+}
+
+.vinyl-overlay {
+  mix-blend-mode: lighten;
 }
 
 /* Vinyl Center Label */
@@ -134,11 +143,28 @@ body {
   width: 77.52%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
   transform-origin: left center;
   transform: rotateY(0) rotateZ(0);
   transition:
     transform var(--transition-duration) var(--transition-easing),
     box-shadow var(--transition-duration) var(--transition-easing);
+}
+
+/* Vinyl Hover Effect */
+
+.vinyl-art:hover .vinyl-disc,
+.vinyl-art:hover .vinyl-overlay {
+  transform: translateX(45px) rotateZ(18deg) rotateY(-18deg);
+}
+
+.vinyl-art:hover .vinyl-label {
+  transform: translateX(45px) rotateZ(18deg);
+}
+
+.vinyl-art:hover .album-cover {
+  transform: perspective(1000px) rotateY(-18deg) rotateZ(-2deg);
+  box-shadow: var(--shadow-cover-hover);
 }
 
 /* =========================
@@ -153,6 +179,14 @@ body {
   width: 500px;
 }
 
+.album-info h1 {
+  width: 500px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
 .album-meta {
   display: flex;
   align-items: center;
@@ -161,6 +195,12 @@ body {
   font-size: 16px;
   line-height: 1.2;
 }
+
+.album-meta strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
 .album-description {
   width: 500px;
   margin: 0;
@@ -185,15 +225,19 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
-
+.spotify-button:hover {
+  background: var(--color-dark);
+  transition: background-color 0.6s ease;
+  color: var(--color-text);
+}
+.spotify-button:hover img {
+  filter: brightness(0) invert(1);
+}
 .spotify-button img {
   width: 24px;
   height: 24px;
 }
-.spotify-button:hover {
-  background: var(--color-dark);
-  color: var(--color-text);
-}
+
 /* =========================
    Tracks Section
 ========================= */
@@ -206,6 +250,16 @@ body {
   width: 1000px;
   padding-bottom: 60px;
 }
+
+.tracks-section h2,
+.other-albums h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .track-list {
   display: flex;
   flex-direction: column;
@@ -214,6 +268,7 @@ body {
   width: 1000px;
   padding: 6px 0;
 }
+
 .track {
   display: flex;
   align-items: center;
@@ -222,12 +277,12 @@ body {
   width: 1000px;
   padding: 6px 0;
 }
+
 .track-number,
 .track-duration {
   flex: 0 0 auto;
   color: var(--color-text-muted);
   font-size: 20px;
-  white-space: nowrap;
 }
 
 .track-number {
@@ -240,7 +295,6 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  white-space: nowrap;
 }
 
 .track-line {
@@ -254,6 +308,19 @@ body {
   text-align: right;
 }
 
+/* =========================
+   Other Albums
+========================= */
+
+.other-albums {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 1000px;
+  padding: 60px 0;
+}
+
 .album-list {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +328,7 @@ body {
   gap: 24px;
   width: 1000px;
 }
+
 .album-card {
   display: flex;
   flex: 0 0 232px;
@@ -274,4 +342,36 @@ body {
 
 .album-card:hover {
   background: var(--color-card-hover);
+}
+
+.album-card img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: var(--shadow-album-card);
+}
+
+.album-card p {
+  width: 200px;
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  width: 1000px;
+  padding: 8px 0 24px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  text-align: center;
 }
