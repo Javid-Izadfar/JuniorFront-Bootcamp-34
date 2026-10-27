@@ -77,3 +77,54 @@ body {
   gap: 60px;
   width: 100%;
 }
+
+/* =========================
+   Album Introduction
+========================= */
+
+.album-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 745px;
+}
+
+/* Vinyl Artwork */
+
+.vinyl-art {
+  position: relative;
+  flex: 0 0 387px;
+  width: 387px;
+  height: 300px;
+  perspective: 1000px;
+}
+/* Vinyl Disc & Overlay */
+
+.vinyl-disc,
+.vinyl-overlay {
+  position: absolute;
+  top: 3.33%;
+  right: 0;
+  width: 72.35%;
+  height: 93.34%;
+  transform: translateX(0) rotateY(0);
+  transition: transform var(--transition-duration) var(--transition-easing);
+}
+/* Album Cover */
+
+.album-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 77.52%;
+  height: 100%;
+  object-fit: cover;
+
+  transform-origin: left center;
+  transform: rotateY(0) rotateZ(0);
+  transition:
+    transform var(--transition-duration) var(--transition-easing),
+    box-shadow var(--transition-duration) var(--transition-easing);
+}
