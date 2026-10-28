@@ -1,5 +1,5 @@
 :root {
-  
+
   --black: #0b0b0b;
   --charcoal: #181818;
   --graphite: #282828;
@@ -42,4 +42,13 @@ a {
 }
 .align-center {
   align-items: center;
+}
+.header {
+  padding: 20px 0;
+  background-color: var(--surface);
+}
+.header-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
 }
