@@ -1,7 +1,7 @@
 :root {
 
   --slate: #474c59;
-  --night: #404450;
+  --night: #0000001A;
   --night-deep: #32353e;
   --sand: #d9d1c7;
   --fog: #D9D1C766;
@@ -144,4 +144,29 @@ a {
   font-size: 20px;
   font-weight: 300;
   color: var(--text-muted-100);
+}
+
+.albums {
+  margin-top: 180px;
+}
+.album-list {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.album-card {
+  width: 232px;
+  padding: 13px;
+  border-radius: 4px;
+  background-color: var(--surface);
+}
+.album-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.album-card-name {
+  margin: 12px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
 }
