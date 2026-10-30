@@ -4,8 +4,9 @@
   --night: #404450;
   --night-deep: #32353e;
   --sand: #d9d1c7;
-  --fog: #908e90;
-  --steel: #818185;
+  --fog: #D9D1C766;
+  --fog-100:#D9D1C780;
+  --dark-purple: #131026;
   --line-gray: #5d606a;
   --navy: #131026;
 
@@ -15,7 +16,8 @@
   --surface-hover: var(--night-deep);
   --text: var(--sand);
   --text-muted: var(--fog);
-  --outline: var(--steel);
+  --text-muted-100: var(--fog-100);
+  --outline: var(--dark-purple);
   --line: var(--line-gray);
   --surface-dark: var(--navy);
   --text-dark: var(--navy);
@@ -79,4 +81,39 @@ a {
   left: 0;
   top: 0;
   z-index: 2;
+}
+
+.album-info {
+  width: 498px;
+}
+.album-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.album-meta {
+  margin: 14px 0 12px 0;
+  font-size: 16px;
+  color: var(--text-muted-100);
+}
+.album-artist {
+  font-weight: 700;
+  color: var(--text-muted-100);
+}
+.album-description {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.spotify-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 22px;
+  border: 2px solid var(--outline);
+  border-radius: 4px;
+  color: var(--outline);
+  font-size: 14px;
+  font-weight: 700;
 }
