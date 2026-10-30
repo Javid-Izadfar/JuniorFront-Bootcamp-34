@@ -1,22 +1,24 @@
 :root {
 
-  --black: #0b0b0b;
-  --charcoal: #181818;
-  --graphite: #282828;
-  --silver: #b3b3b3;
-  --white: #ffffff;
-  --green: #1db954;
-  --green-light: #1ed760;
+  --slate: #474c59;
+  --night: #404450;
+  --night-deep: #32353e;
+  --sand: #d9d1c7;
+  --fog: #908e90;
+  --steel: #818185;
+  --line-gray: #5d606a;
+  --navy: #131026;
 
 
-  --bg: var(--black);
-  --surface: var(--charcoal);
-  --surface-hover: var(--graphite);
-  --text: var(--white);
-  --text-muted: var(--silver);
-  --primary: var(--green);
-  --primary-hover: var(--green-light);
-  --on-primary: var(--black);
+  --bg: var(--slate);
+  --surface: var(--night);
+  --surface-hover: var(--night-deep);
+  --text: var(--sand);
+  --text-muted: var(--fog);
+  --outline: var(--steel);
+  --line: var(--line-gray);
+  --surface-dark: var(--navy);
+  --text-dark: var(--navy);
 }
 
 * {
@@ -34,7 +36,7 @@ a {
 }
 
 .container {
-  width: 980px;
+  width: 1000px;
   margin: auto;
 }
 .flex {
@@ -43,12 +45,38 @@ a {
 .align-center {
   align-items: center;
 }
+
+
 .header {
-  padding: 20px 0;
-  background-color: var(--surface);
+  padding: 24px 0;
+  text-align: center;
 }
 .header-title {
   margin: 0;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+
+.album-intro {
+  gap: 115px;
+  margin: 150px 0 280px 0;
+}
+.vinyl-art {
+  position: relative;
+  width: 387px;
+  height: 300px;
+}
+.layer {
+  position: absolute;
+}
+.vinyl-disc {
+  left: 127px;
+  top: 20px;
+  z-index: 1;
+}
+.album-cover {
+  left: 0;
+  top: 0;
+  z-index: 2;
 }
