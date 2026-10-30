@@ -30,7 +30,6 @@ body {
   margin: 0;
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Lato", sans-serif;
 }
 a {
   color: inherit;
@@ -116,4 +115,33 @@ a {
   color: var(--outline);
   font-size: 14px;
   font-weight: 700;
+}
+
+.section-title {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+.track {
+  gap: 20px;
+  padding: 9.6px 0;
+}
+.track-number {
+  width: 32px;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-muted-100);
+}
+.track-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+.track-line {
+  flex-grow: 1;
+  border-bottom: 1px dotted var(--line);
+}
+.track-duration {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-muted-100);
 }
