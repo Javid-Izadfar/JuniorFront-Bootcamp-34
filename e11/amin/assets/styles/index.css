@@ -17,7 +17,7 @@
   --text: var(--sand);
   --text-muted: var(--fog);
   --text-muted-100: var(--fog-100);
-  --outline: var(--dark-purple);
+  --dark-color: var(--dark-purple);
   --line: var(--line-gray);
   --surface-dark: var(--navy);
   --text-dark: var(--navy);
@@ -110,9 +110,9 @@ a {
   align-items: center;
   gap: 12px;
   padding: 10px 22px;
-  border: 2px solid var(--outline);
+  border: 2px solid var(--dark-color);
   border-radius: 4px;
-  color: var(--outline);
+  color: var(--dark-color);
   font-size: 14px;
   font-weight: 700;
 }
@@ -169,4 +169,19 @@ a {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+}
+
+.footer {
+  margin-top: 120px;
+  padding: 24px 0;
+  background-color: var(--surface);
+  text-align: center;
+}
+.footer-text {
+  margin: 0;
+  font-size: 15px;
+  color: var(--dark-color);
+}
+.footer-name {
+  font-weight: 700;
 }
