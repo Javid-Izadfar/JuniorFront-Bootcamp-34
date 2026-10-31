@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --blue: #3b4a6b;
+  --lightblack: #656565;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 980px;
+  margin: auto;
+}
+.section {
+  background-color: var(--blue);
+  /* width: 980px; */
+  height: 500px;
+  margin-top: 100px;
+  border-radius: 16px;
+  position: relative;
+}
+.ellipse3 {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+  z-index: 1;
+}
+.ellipse2 {
+  position: absolute;
+  top: 115px;
+  left: 350px;
+}
+.ellipse4 {
+  position: absolute;
+  top: 170px;
+  left: 410px;
+  z-index: 2;
+}
+.ellipse8 {
+  position: absolute;
+  top: 230px;
+  left: 390px;
+  z-index: 2;
+}
+.ellipse6 {
+  position: absolute;
+  top: 180px;
+  left: 480px;
+  z-index: 2;
+  border: 2px solid var(--lightblack);
+  border-radius: 50%;
+}
+.ellipse5 {
+  border: 2px solid var(--lightblack);
+  border-radius: 50%;
+  position: absolute;
+  top: 270px;
+  left: 420px;
+  z-index: 2;
+}
+.ellipse7 {
+  position: absolute;
+  top: 270px;
+  left: 543px;
+  z-index: 2;
+}
