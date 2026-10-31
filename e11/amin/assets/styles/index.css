@@ -2,7 +2,7 @@
 
   --slate: #474c59;
   --night: #0000001A;
-  --night-deep: #32353e;
+  --night-deep: #0000004D;
   --sand: #d9d1c7;
   --fog: #D9D1C766;
   --fog-100:#D9D1C780;
@@ -184,4 +184,41 @@ a {
 }
 .footer-name {
   font-weight: 700;
+}
+
+/* hover and effects */
+
+.album-card {
+  transition: background-color 0.3s ease;
+}
+.album-card:hover {
+  background-color: var(--surface-hover);
+}
+
+.vinyl-disc,
+.album-cover {
+  transition: transform 1.5s ease-in-out;
+}
+.vinyl-art:hover .vinyl-disc {
+  transform: translateX(66px) rotate(180deg) scale(1.08);
+}
+.vinyl-art:hover .album-cover {
+  transform: perspective(800px) rotateY(-20deg) scale(1.08);
+}
+
+
+.spotify-button:hover {
+  background-color: var(--surface-dark);
+  border-color: var(--surface-dark);
+  color: var(--text);
+
+}
+.spotify-icon-hover {
+  display: none;
+}
+.spotify-button:hover .spotify-icon {
+  display: none;
+}
+.spotify-button:hover .spotify-icon-hover {
+  display: block;
 }
