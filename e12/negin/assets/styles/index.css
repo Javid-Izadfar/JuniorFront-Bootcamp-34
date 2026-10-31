@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-700: #474c59;
+
+  --dark-100: #0000001a;
+  --dark-300: #0000004d;
+
+  --black: #131026;
+
+  --light-300: #d9d1c7;
+
+  --bg-main: var(--gray-700);
+  --bg-footer: var(--dark-100);
+  --bg-album: var(--dark-300);
+
+  --text-color: var(--light-300);
+  --btn-color: var(--black);
+
+  --container-width: 312px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+.bg-main {
+  background-color: var(--bg-main);
+}
+
+.hero-heading-top {
+  margin: 0;
+  padding: 19px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--text-color);
+}
+.left {
+  position: relative;
+  margin: 30px 0;
+}
+.hero-cover {
+  position: relative;
+  z-index: 1;
+}
+.disc {
+  position: absolute;
+  top: 8.06px;
+  left: 86.26px;
+}
+.hero-heading {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--text-color);
+}
+.eminem {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.songs-16 {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.hero-p {
+  margin: 15px 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+}
+.btn {
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid var(--btn-color);
+  border-radius: 4px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  .icon {
+    path {
+      fill: var(--text-color);
+    }
+  }
+}
+.btn-text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.headings {
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-color);
+}
+.tracks-section {
+  margin: 60px 0;
+}
+.tracks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tracks-item {
+  padding: 6px 0;
+}
+.tracks-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.tracks-line {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--text-color) 0px,
+    var(--text-color) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  opacity: 15%;
+}
+.number-list {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: var(--text-color);
+  opacity: 50%;
+}
+.name-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.time-list {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: var(--text-color);
+  opacity: 50%;
+}
+
+.albums-section {
+  margin-bottom: 30px;
+}
+.albums-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.albums-item {
+  width: 48%;
+  background-color: var(--bg-footer);
+  padding: 16px 8px;
+  text-align: center;
+}
+.albums-img {
+  --size: 118px;
+  width: var(--size);
+  height: var(--size);
+}
+.albums-title {
+  margin-top: 8px;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text-color);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  background-color: var(--bg-footer);
+  text-align: center;
+  padding: 12px 0;
+}
+.dev-span {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+}
+.name-span {
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--black);
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --container-width: 1000px;
+  }
+  .hero-heading-top {
+    padding: 24px 0;
+  }
+  .hero-flex {
+    display: flex;
+    gap: 113px;
+    margin: 149.5px 0 222.5px 0;
+    align-items: center;
+  }
+
+  .left {
+    width: 38.7%;
+    perspective: 10cm;
+  }
+  .hero-cover {
+    --size: 300px;
+    width: var(--size);
+    height: var(--size);
+  }
+  .disc {
+    --size: 280px;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    top: 10px;
+    left: 107px;
+  }
+  .left:hover {
+    .hero-cover {
+      transform: rotateY(-15deg);
+      transform-origin: left;
+      transition: ease-in;
+    }
+    .disc {
+      transform: translateX(87px) rotateZ(56.3deg);
+      transition: ease-in;
+    }
+  }
+
+  .right {
+    width: 50%;
+    padding: 14px 0;
+  }
+  .btn {
+    width: 38.5%;
+    color: var(--btn-color);
+    background-color: transparent;
+    .icon {
+      path {
+        fill: var(--btn-color);
+      }
+    }
+  }
+  .btn:hover,
+  .icon:hover {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    path {
+      fill: var(--text-color);
+    }
+  }
+
+  .tracks-section {
+    padding-bottom: 60px;
+  }
+  .tracks-link:hover {
+    gap: 12px;
+  }
+  .tracks-link {
+    gap: 24px;
+  }
+  .name-list {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+  .number-list {
+    font-size: 20px;
+  }
+
+  .albums-section {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+  .albums-list {
+    gap: 24px;
+  }
+  .albums-item {
+    width: 23.2%;
+    padding: 16px;
+  }
+  .albums-title {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  .albums-img {
+    --size: 200px;
+  }
+  .albums-item:hover {
+    background-color: var(--bg-album);
+  }
+
+  .footer {
+    padding: 24px 0;
+  }
+}
