@@ -1,0 +1,35 @@
+:root {
+  --blue: #277da1;
+  --red: #f94144;
+  --orange: #f3722c;
+  --green: #43aa8b;
+  --white: #eeebdd;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+.device {
+  --color: var(--red) width: 100vw;
+  height: 100vh;
+  background-color: var(--color);
+}
+
+@media (min-width: 1000px) {
+  .device {
+    --color: var(var(--blue));
+  }
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #43aa8b;
+}
+
+@media screen and (max-width: 770px) {
+  .box {
+    border-radius: 50%;
+  }
+}

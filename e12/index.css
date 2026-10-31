@@ -1,0 +1,414 @@
+:root {
+  --background: #f4f4f4;
+  --main-color: #484b5a;
+  --dark-color: #292a2d;
+  --text-color: #e5e3df;
+  --muted-color: #a4a4a8;
+  --spotify-color: #15121f;
+  --spotify-hover: #151d38;
+  --border-color: #60616a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+.previews {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.desktop-version {
+  width: 1000px;
+  flex-shrink: 0;
+  background: var(--main-color);
+  padding: 35px 55px;
+}
+
+.container {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--muted-color);
+  margin-bottom: 45px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  min-height: 320px;
+  margin-bottom: 65px;
+}
+
+.record-scene {
+  width: 390px;
+  height: 310px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.main-cover {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.vinyl {
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle,
+    #111 0px,
+    #222 2px,
+    #111 4px,
+    #252525 6px
+  );
+  position: absolute;
+  left: 145px;
+  transform: translateX(-35px) rotate(-25deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinyl-label {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #34333b;
+  border: 8px solid #151515;
+}
+
+.record-scene:hover .vinyl {
+  transform: translateX(100px) rotate(360deg);
+}
+
+.album-info {
+  max-width: 400px;
+}
+
+.album-info h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.album-meta {
+  font-size: 12px;
+  color: var(--muted-color);
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #aaaab0;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.spotify-btn {
+  padding: 12px 25px;
+  background: transparent;
+  border: 1px solid #24232e;
+  color: #171521;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.spotify-btn:hover {
+  background: var(--spotify-hover);
+  color: white;
+}
+
+.tracks-section {
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
+.tracks-section h2,
+.other-albums h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  gap: 15px;
+  font-size: 12px;
+}
+
+.track span {
+  color: #85858d;
+  font-size: 10px;
+}
+
+.track p {
+  flex: 1;
+}
+
+.track small {
+  color: #aaaab0;
+  font-size: 11px;
+}
+
+.other-albums {
+  margin-top: 50px;
+}
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.album-card {
+  width: 145px;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  text-align: center;
+}
+
+.album-card img {
+  width: 100%;
+  height: 125px;
+  display: block;
+}
+
+.album-card p {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #c5c4c6;
+}
+
+footer {
+  margin-top: 45px;
+  padding: 15px;
+  text-align: center;
+  font-size: 10px;
+  color: #aaaab0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-version {
+  width: 340px;
+  flex-shrink: 0;
+  background: var(--main-color);
+  zoom: 0.43;
+  height: auto;
+  padding: 20px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.mobile-container {
+  width: 100%;
+}
+
+.mobile-header {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+}
+
+.mobile-header span {
+  font-size: 22px;
+}
+
+.mobile-header p {
+  font-size: 20px;
+}
+
+.mobile-subtitle {
+  font-size: 11px;
+  color: var(--muted-color);
+  margin-bottom: 25px;
+}
+
+.mobile-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-cover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.mobile-info h1 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.mobile-meta {
+  color: var(--muted-color);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.mobile-description {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #aaaab0;
+  margin-bottom: 18px;
+}
+
+.mobile-spotify {
+  width: 100%;
+  height: 40px;
+  background: var(--spotify-color);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.mobile-spotify:hover {
+  background: var(--spotify-hover);
+}
+
+.mobile-tracks {
+  margin-top: 50px;
+}
+
+.mobile-tracks h2,
+.mobile-other-albums h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.mobile-track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 38px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 12px;
+}
+
+.mobile-track span {
+  font-size: 10px;
+  color: #85858d;
+}
+
+.mobile-track p {
+  flex: 1;
+}
+
+.mobile-track small {
+  font-size: 11px;
+  color: #aaaab0;
+}
+
+.mobile-other-albums {
+  margin-top: 45px;
+}
+
+.mobile-album-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mobile-album-card {
+  width: 47%;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 8px;
+  text-align: center;
+}
+
+.mobile-album-card img {
+  width: 100%;
+  height: 125px;
+  display: block;
+}
+
+.mobile-album-card p {
+  font-size: 10px;
+  margin-top: 8px;
+  color: #c5c4c6;
+}
+
+.mobile-footer {
+  margin-top: 25px;
+  font-size: 10px;
+  text-align: center;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .previews {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+  }
+
+  .desktop-version {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .record-scene {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .album-info {
+    width: 100%;
+  }
+
+  .mobile-version {
+    margin-top: 30px;
+  }
+}
