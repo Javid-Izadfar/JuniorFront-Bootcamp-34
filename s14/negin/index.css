@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+
+  --yellow-100: #fed50b;
+  --yellow-300: #fab403;
+  --yellow-600: #e2be08;
+
+  --gray: #d3d3d1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  margin: 20px auto;
+  width: 600px;
+  aspect-ratio: 1;
+  border: solid 2px var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
