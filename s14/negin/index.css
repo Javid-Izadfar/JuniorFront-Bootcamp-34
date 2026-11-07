@@ -9,7 +9,8 @@
   --yellow-300: #fab403;
   --yellow-600: #e2be08;
 
-  --gray: #d3d3d1;
+  --gray-100: #d3d3d1;
+  --gray-300: #9d9d9d;
 }
 
 body {
@@ -28,7 +29,66 @@ body {
   width: 600px;
   aspect-ratio: 1;
   border: solid 2px var(--black);
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.stapler {
+  width: 400px;
+  aspect-ratio: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.top {
+  display: block;
+  width: 300px;
+  aspect-ratio: 4;
+  border-radius: 45px 30px 0 20px;
+  background-color: var(--yellow-100);
+  transform: skewX(-6deg) translateY(30px) rotateZ(-15deg);
+  transform-origin: left;
+  position: relative;
+  z-index: 2;
+}
+.gray {
+  display: block;
+  width: 200px;
+  height: 45px;
+  background: linear-gradient(var(--gray-100) 70%, var(--gray-300) 30%);
+  position: absolute;
+  top: 60px;
+  right: 66px;
+  z-index: -1;
+  transform: skewX(-20deg) rotateZ(-15deg);
+}
+.center {
+  display: block;
+  width: 90px;
+  height: 30px;
+  transform: translateX(-80px) skewX(15deg);
+  background-color: var(--yellow-300);
+  position: relative;
+  z-index: 1;
+}
+.bottom {
+  display: block;
+  width: 300px;
+  aspect-ratio: 6;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    var(--yellow-100) 50%,
+    var(--yellow-600) 50%
+  );
+}
+.box {
+  width: 60px;
+  height: 10px;
+  background-color: var(--yellow-600);
+  transform: translateX(225px) translateY(-10px);
 }
