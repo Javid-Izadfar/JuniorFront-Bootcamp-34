@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#F8F9FB] min-h-screen flex flex-col items-center justify-center p-4 text-slate-800"
+  >
+    <main
+      class="w-full max-w-[358px] sm:max-w-[512px] flex flex-col items-center gap-6"
+    >
+      <div class="flex items-center gap-3 justify-center mb-2">
+        <img
+          src="svg.svg"
+          alt="Fernway Logo"
+          class="w-10 h-10"
+        />
+        <span class="text-xl font-semibold tracking-tight text-slate-900"
+          >Fernway</span
+        >
+      </div>
+
+      <div
+        class="w-full bg-white rounded-3xl border border-slate-[#D1D5DC] p-8"
+      >
+        <h1 class="text-2xl font-bold text-slate-900 mb-6">
+          Sign in to Fernway
+        </h1>
+
+        <form class="flex flex-col gap-5">
+          <div class="flex flex-col gap-2">
+            <label for="email" class="text-sm font-medium text-slate-700"
+              >Work email</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="maya@ortizstudio.com"
+              class="w-full px-4 py-3 rounded-xl border shadow-inner border-slate-[#D1D5DC] text-slate-800 placeholder-slate-400 text-sm transition-all"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="password" class="text-sm font-medium text-slate-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              placeholder="•••••"
+              class="w-full px-4 py-3 rounded-xl shadow-inner border placeholder:tracking-widest border-slate-[#D1D5DC] text-slate-800 placeholder-[#364153] text-sm transition-all"
+            />
+          </div>
+
+          <div class="flex items-center justify-between text-sm mt-1">
+            <label
+              class="flex items-center gap-2 cursor-pointer font-medium text-slate-900"
+            >
+              <input
+                type="checkbox"
+                checked
+                class="w-4 h-4 rounded border-slate-[#D1D5DC] text-black accent-black cursor-pointer"
+              />
+              Remember me
+            </label>
+            <a
+              href="#"
+              class="text-[#4F39F6] hover:text-[#301cc7] font-medium transition-opacity"
+              >Forgot password?</a
+            >
+          </div>
+
+          <div class="mt-2">
+            <button
+              type="submit"
+              class="px-6 py-3 bg-[#4F39F6] hover:bg-[#301cc7] text-white font-medium rounded-full text-sm transition-all shadow-sm border border-slate-[#D1D5DC]"
+            >
+              Sign in
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <p class="text-sm border-slate-[#D1D5DC]">
+        New to Fernway?
+        <a
+          href="#"
+          class="text-[#4F39F6] hover:text-[#301cc7] font-medium transition-opacity"
+          >Open an account</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
