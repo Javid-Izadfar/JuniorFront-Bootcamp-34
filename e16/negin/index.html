@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Sign in</title>
+  </head>
+  <body class="font-sans dark:bg-gray-950 dark:text-white">
+    <main>
+      <div class="min-[1440px]:w-lg min-[390px]:w-89.5 m-auto">
+        <div class="flex justify-center gap-3 mt-64">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_27_24542)">
+              <path
+                d="M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z"
+                fill="#4F46E5"
+              />
+              <path
+                d="M10 22V16M10 16V10H22M10 16H18"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_27_24542">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="font-semibold text-lg">Fernway</span>
+        </div>
+        <div
+          class="border border-solid border-gray-900/5 rounded-2xl shadow-sm shadow-black/10 p-8 mt-8 dark:bg-gray-900"
+        >
+          <h1 class="font-bold text-2xl tracking-[-2.5%]">
+            Sign in to Fernway
+          </h1>
+          <label
+            for="email-input"
+            class="block font-medium text-sm text-gray-700 mt-6 dark:text-white"
+          >
+            Work email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            placeholder="maya@ortizstudio.com"
+            class="block border rounded-md border-gray-300 min-[390px]:w-73.5 min-[1440px]:w-112 shadow-sm inset-shadow-sm text-gray-400 text-sm font-normal py-2 px-3 mt-1 dark:text-gray-400"
+          />
+          <label
+            for="password"
+            class="block font-medium text-sm text-gray-700 mt-6 dark:text-gray-300"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="•••••"
+            class="block border rounded-md border-gray-300 min-[390px]:w-73.5 min-[1440px]:w-112 shadow-sm inset-shadow-sm text-gray-700 font-normal py-2 px-3 mt-1 dark:text-gray-400"
+          />
+          <div class="pt-6 flex justify-between items-center">
+            <div>
+              <input
+                type="checkbox"
+                name="remember"
+                id="remember "
+                class="accent-black mr-[3.5px]"
+              />
+              <label
+                for="remember"
+                class="font-semibold text-sm text-gray-900 dark:text-gray-200"
+              >
+                Remember me
+              </label>
+            </div>
+            <a href="#" title="" class="text-indigo-600 text-sm font-medium"
+              >Forgot password?</a
+            >
+          </div>
+          <a
+            href="#"
+            title="Sign in"
+            class="block w-[87px] h-9 bg-indigo-600 text-white text-sm font-semibold leading-[20px] py-2 px-5 rounded-[9999px] mt-8"
+            >Sign in</a
+          >
+        </div>
+        <div
+          class="text-gray-600 text-sm font-normal text-center mt-6 mb-64 dark:text-gray-400"
+        >
+          <span>New to Fernway?</span>
+          <a href="#" title="open an account" class="text-indigo-600"
+            >Open an account</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
