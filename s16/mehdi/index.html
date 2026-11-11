@@ -5,6 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Sign in to your Fernway account.">
+
   <title>Sign In - Fernway</title>
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -12,43 +15,47 @@
 
 <body class="min-h-screen bg-[#f8f9fb] text-[#111827]">
 
-  <main class="flex min-h-screen flex-col items-center px-5 py-10">
+  <main class="flex min-h-screen flex-col items-center px-4 py-8 sm:px-5 sm:py-10">
 
     <!-- Logo -->
-    <div class="mb-10 flex items-center gap-4">
+    <div class="mb-8 flex items-center gap-4 sm:mb-10">
 
-      <div class="flex size-14 items-center justify-center rounded-2xl bg-[#5141f5]">
+      <div class="flex size-12 items-center justify-center rounded-2xl bg-[#5141f5] sm:size-14">
+
 
         <img
-          src="./assets/logo/logo.svg"
+          src="./asssets/logo/logo.svg"
           alt="Fernway logo"
           title="Fernway logo"
-          class="size-8 object-contain"
+          class="size-7 object-contain sm:size-8"
         >
 
       </div>
 
-      <h1 class="text-3xl font-semibold tracking-tight">
+      <h1 class="text-2xl font-semibold tracking-tight sm:text-3xl">
         Fernway
       </h1>
 
     </div>
 
-    <!-- Sign In Card -->
-    <section class="w-full max-w-md rounded-3xl border border-gray-200 bg-white p-6 shadow-md sm:p-8">
 
-      <h2 class="mb-8 text-3xl font-bold tracking-tight">
+    <!-- Sign In Card -->
+    <section class="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-5 shadow-md sm:rounded-3xl sm:p-8">
+
+      <h2 class="mb-6 text-2xl font-bold tracking-tight sm:mb-8 sm:text-3xl">
         Sign in to Fernway
       </h2>
 
-      <form class="space-y-7">
+
+      <!-- Sign In Form -->
+      <form class="space-y-6 sm:space-y-7">
 
         <!-- Email -->
         <div class="flex flex-col gap-2">
 
           <label
             for="email"
-            class="text-lg font-medium text-gray-700"
+            class="text-base font-medium text-gray-700 sm:text-lg"
           >
             Work email
           </label>
@@ -60,18 +67,20 @@
             title="Work email"
             placeholder="maya@ortizstudio.com"
             autocomplete="email"
+            spellcheck="false"
             required
-            class="h-14 w-full rounded-xl border border-gray-300 bg-white px-4 text-base shadow-sm outline-none placeholder:text-gray-400 focus:border-[#5141f5] focus:ring-2 focus:ring-[#5141f5]/20"
+            class="h-12 w-full rounded-xl border border-gray-300 bg-white px-4 text-sm shadow-sm outline-none placeholder:text-gray-400 focus:border-[#5141f5] focus:ring-2 focus:ring-[#5141f5]/20 sm:h-14 sm:text-base"
           >
 
         </div>
+
 
         <!-- Password -->
         <div class="flex flex-col gap-2">
 
           <label
             for="password"
-            class="text-lg font-medium text-gray-700"
+            class="text-base font-medium text-gray-700 sm:text-lg"
           >
             Password
           </label>
@@ -84,22 +93,28 @@
             placeholder="••••••"
             autocomplete="current-password"
             required
-            class="h-14 w-full rounded-xl border border-gray-300 bg-white px-4 text-base shadow-sm outline-none placeholder:text-gray-400 focus:border-[#5141f5] focus:ring-2 focus:ring-[#5141f5]/20"
+            class="h-12 w-full rounded-xl border border-gray-300 bg-white px-4 text-sm shadow-sm outline-none placeholder:text-gray-400 focus:border-[#5141f5] focus:ring-2 focus:ring-[#5141f5]/20 sm:h-14 sm:text-base"
           >
 
         </div>
 
+
         <!-- Remember / Forgot -->
         <div class="flex flex-wrap items-center justify-between gap-3">
 
-          <label class="flex cursor-pointer items-center gap-3 text-base font-medium">
+          <label
+            for="remember"
+            class="flex cursor-pointer items-center gap-2 text-sm font-medium sm:gap-3 sm:text-base"
+          >
 
             <input
-              type="checkbox"
+              id="remember"
               name="remember"
+              type="checkbox"
               title="Remember me"
+              value="true"
               checked
-              class="size-5 accent-[#5141f5]"
+              class="size-4 cursor-pointer accent-[#5141f5] sm:size-5"
             >
 
             Remember me
@@ -109,18 +124,19 @@
           <a
             href="#"
             title="Forgot password"
-            class="text-base font-medium text-[#5141f5]"
+            class="text-sm font-medium text-[#5141f5] hover:underline sm:text-base"
           >
             Forgot password?
           </a>
 
         </div>
 
+
         <!-- Submit -->
         <button
           type="submit"
           title="Sign in"
-          class="h-14 rounded-full bg-[#5141f5] px-9 text-lg font-semibold text-white transition-colors hover:bg-[#4030dc] active:scale-[0.98]"
+          class="h-12 w-full rounded-full bg-[#5141f5] px-6 text-base font-semibold text-white transition-colors hover:bg-[#4030dc] active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5141f5] sm:h-14 sm:text-lg"
         >
           Sign in
         </button>
@@ -129,20 +145,25 @@
 
     </section>
 
+
     <!-- Footer -->
-    <p class="mt-8 text-center text-base text-gray-600">
+    <footer class="mt-7 px-2 text-center sm:mt-8">
 
-      New to Fernway?
+      <p class="text-sm text-gray-600 sm:text-base">
 
-      <a
-        href="#"
-        title="Open an account"
-        class="font-medium text-[#5141f5]"
-      >
-        Open an account
-      </a>
+        New to Fernway?
 
-    </p>
+        <a
+          href="#"
+          title="Open an account"
+          class="font-medium text-[#5141f5] hover:underline"
+        >
+          Open an account
+        </a>
+
+      </p>
+
+    </footer>
 
   </main>
 
