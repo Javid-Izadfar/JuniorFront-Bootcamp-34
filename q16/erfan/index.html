@@ -8,8 +8,8 @@
   </head>
   <body class="bg-gray-500 flex items-center justify-center h-screen">
     <main class="w-95">
-      <div class="">
-        <a href="#" title="Go To Home">
+      <div class="text-center">
+        <a class="inline-flex items-center gap-2" href="#" title="Go To Home">
           <svg
             width="32"
             height="32"
@@ -39,7 +39,9 @@
           Fernway
         </a>
       </div>
-      <form class="bg-white p-8 rounded-2xl border border-gray-500/5 shadow-sm">
+      <form
+        class="flex flex-col gap-6 bg-white p-8 rounded-2xl border border-gray-500/5 shadow-sm"
+      >
         <h1 class="font-bold text-gray-900 text-2xl">Sign in to Fernway</h1>
         <div class="">
           <label for="email_input" id="email_input">Work email</label>
@@ -51,7 +53,7 @@
             class="block mt-1 rounded-md px-3 py-2 border border-gray-300 bg-white placeholder:text-gray-300"
           />
         </div>
-        <div class="">
+        <div>
           <label for="password_input">Password</label>
           <input
             class="block mt-1 rounded-md px-3 py-2 border border-gray-300 bg-white placeholder:text-gray-300"
@@ -60,9 +62,13 @@
             type="password"
           />
         </div>
-        <input id="remember_checkbox" type="checkbox" />
-        Remember me
-        <a>Forgot password?</a>
+        <div class="flex justify-between items-center">
+          <div>
+            <input id="remember_checkbox" type="checkbox" />
+            Remember me
+          </div>
+          <a>Forgot password?</a>
+        </div>
         <button>Sign in</button>
       </form>
       <div>
