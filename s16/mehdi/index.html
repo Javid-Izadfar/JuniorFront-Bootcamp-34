@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Sign in to your Fernway account.">
+
+  <title>Sign In - Fernway</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Dark Mode -->
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+  </style>
+
+  <!-- Theme Initialization -->
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("fernway-theme");
+
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (error) {
+      console.warn("Theme preference unavailable.");
+    }
+  </script>
+
+</head>
+
+<body class="min-h-screen bg-[#f8f9fb] text-[#111827] transition-colors duration-300 dark:bg-[#111827] dark:text-white">
+
+  <main class="flex min-h-screen flex-col items-center px-5 py-10">
+
+    <!-- Logo -->
+    <header class="mb-10 flex w-full max-w-md items-center justify-between">
+
+      <a
+        href="/"
+        title=""
+        title="Fernway Home"
+        class="flex items-center gap-4"
+      >
+
+        <div class="flex size-14 items-center justify-center rounded-2xl bg-[#5141f5]">
+
+          <img
+            src="./assets/svg/logo.svg"
+            alt="Fernway logo"
+            class="size-8 object-contain"
+          >
+
+        </div>
+
+        <span class="text-3xl font-semibold tracking-tight">
+          Fernway
+        </span>
+
+      </a>
+
+      <!-- Theme Toggle -->
+      <button
+        id="themeToggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+        title="Change theme"
+        class="flex size-11 items-center justify-center rounded-xl border border-gray-200 bg-white text-xl transition-colors hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5141f5] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+      >
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+
+    </header>
+
+
+    <!-- Sign In Card -->
+    <section
+      aria-labelledby="signin-title"
+      class="w-full max-w-md rounded-3xl border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-[#1f2937] sm:p-8"
+    >
+
+      <div class="mb-8">
+
+        <h1
+          id="signin-title"
+          class="text-3xl font-bold tracking-tight"
+        >
+          Sign in to Fernway
+        </h1>
+
+        <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">
+          Welcome back! Please enter your details.
+        </p>
+
+      </div>
+
+
+      <!-- Form -->
+      <form
+        id="signinForm"
+        action="/login"
+        method="post"
+        class="space-y-7"
+      >
+
+        <!-- Email -->
+        <div class="flex flex-col gap-2">
+
+          <label
+            for="email"
+            class="text-base font-medium text-gray-700 dark:text-gray-200"
+          >
+            Work email
+          </label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="maya@ortizstudio.com"
+            autocomplete="email"
+            spellcheck="false"
+            autocapitalize="none"
+            required
+            class="h-14 w-full rounded-xl border border-gray-300 bg-white px-4 text-base shadow-sm outline-none placeholder:text-gray-400 focus:border-[#5141f5] focus:ring-2 focus:ring-[#5141f5]/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500"
+          >
+
+        </div>
+
+
+        <!-- Password -->
+        <div class="flex flex-col gap-2">
+
+          <label
+            for="password"
+            class="text-base font-medium text-gray-700 dark:text-gray-200"
+          >
+            Password
+          </label>
+
+          <div class="relative">
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="••••••"
+              autocomplete="current-password"
+              required
+              class="h-14 w-full rounded-xl border border-gray-300 bg-white px-4 pr-16 text-base shadow-sm outline-none placeholder:text-gray-400 focus:border-[#5141f5] focus:ring-2 focus:ring-[#5141f5]/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+            >
+
+            <button
+              id="passwordToggle"
+              type="button"
+              aria-label="Show password"
+              aria-pressed="false"
+              class="absolute right-4 top-1/2 -translate-y-1/2 rounded-md px-1 py-2 text-sm font-medium text-[#5141f5] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5141f5] dark:text-[#a69eff]"
+            >
+              Show
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Remember / Forgot -->
+        <div class="flex flex-wrap items-center justify-between gap-3">
+
+          <label
+            for="remember"
+            class="flex cursor-pointer items-center gap-3 text-base font-medium"
+          >
+
+            <input
+              id="remember"
+              name="remember"
+              type="checkbox"
+              value="true"
+              class="size-5 accent-[#5141f5]"
+            >
+
+            Remember me
+
+          </label>
+
+          <a
+            href="/forgot-password"
+            title="forgot"
+            title="Forgot password"
+            class="text-base font-medium text-[#5141f5] hover:underline dark:text-[#a69eff]"
+          >
+            Forgot password?
+          </a>
+
+        </div>
+
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="h-14 w-full rounded-full bg-[#5141f5] px-9 text-lg font-semibold text-white transition-colors hover:bg-[#4030dc] active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5141f5]"
+        >
+          Sign in
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mt-8 text-center">
+
+      <p class="text-base text-gray-600 dark:text-gray-400">
+
+        New to Fernway?
+
+        <a
+          href="/register"
+          title="register"
+          title="Open an account"
+          class="font-medium text-[#5141f5] hover:underline dark:text-[#a69eff]"
+        >
+          Open an account
+        </a>
+
+      </p>
+
+      <p class="mt-5 text-xs text-gray-400">
+        © 2026 Fernway. All rights reserved.
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <!-- JavaScript -->
+  <script>
+
+    // DOM Elements
+    const html = document.documentElement;
+
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+
+    const passwordInput = document.getElementById("password");
+    const passwordToggle = document.getElementById("passwordToggle");
+
+
+    // Theme Management
+    function updateTheme(theme) {
+
+      html.dataset.theme = theme;
+
+      const isDark = theme === "dark";
+
+      themeIcon.textContent = isDark ? "☀️" : "🌙";
+
+      themeToggle.setAttribute(
+        "aria-label",
+        isDark ? "Switch to light mode" : "Switch to dark mode"
+      );
+
+      themeToggle.setAttribute(
+        "aria-pressed",
+        String(isDark)
+      );
+
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute(
+          "content",
+          isDark ? "#111827" : "#f8f9fb"
+        );
+
+      try {
+        localStorage.setItem("fernway-theme", theme);
+      } catch (error) {
+        console.warn("Theme preference could not be saved.");
+      }
+
+    }
+
+
+    // Theme Toggle
+    themeToggle.addEventListener("click", () => {
+
+      const newTheme =
+        html.dataset.theme === "dark" ? "light" : "dark";
+
+      updateTheme(newTheme);
+
+    });
+
+
+    // Initial Theme
+    updateTheme(html.dataset.theme);
+
+
+    // Password Visibility
+    passwordToggle.addEventListener("click", () => {
+
+      const isPassword = passwordInput.type === "password";
+
+      passwordInput.type = isPassword ? "text" : "password";
+
+      passwordToggle.textContent = isPassword ? "Hide" : "Show";
+
+      passwordToggle.setAttribute(
+        "aria-label",
+        isPassword ? "Hide password" : "Show password"
+      );
+
+      passwordToggle.setAttribute(
+        "aria-pressed",
+        String(isPassword)
+      );
+
+    });
+
+  </script>
+
+</body>
+</html>
