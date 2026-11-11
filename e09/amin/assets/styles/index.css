@@ -1,0 +1,289 @@
+:root {
+  --mist: #e6eaeb;
+  --ink: #040202;
+  --ink-soft: #8a8c8d;
+  --white: #ffffff;
+  --white-soft: #999999;
+  --green: #346e16;
+
+  --bg: var(--mist);
+  --text: var(--ink);
+  --text-muted: var(--ink-soft);
+  --text-inverse: var(--white);
+  --text-inverse-muted: var(--white-soft);
+  --surface-dark: var(--ink);
+  --primary: var(--green);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: start;
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 12px 0;
+  background-color: var(--bg);
+}
+.nav {
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.hero-inner {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  padding: 152px 0 162px 0;
+}
+.hero-title {
+  position: absolute;
+  top: 81px;
+  left: -24px;
+  z-index: 10;
+  margin: 0;
+  font-size: 300px;
+  font-weight: normal;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--primary);
+}
+.hero-row {
+  width: 1190px;
+  margin-left: -33px;
+}
+.hero-side {
+  margin-top: 246px;
+}
+.hero-slogan {
+  margin: 0 0 55px 0;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.buy-btn {
+  width: 204px;
+  padding: 16px 32px;
+  gap: 12px;
+  border-radius: 30px;
+  background-color: var(--surface-dark);
+  color: var(--text-inverse);
+  font-size: 18px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.hero-photo {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.layer {
+  position: absolute;
+  object-fit: cover;
+}
+.layer-circle {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.layer-lemon-bg {
+  left: 3.4%;
+  top: 3.2%;
+  width: 93.2%;
+  height: 93.6%;
+  opacity: 0.2;
+}
+.layer-lime {
+  left: 11.8%;
+  top: 23%;
+  width: 38.2%;
+  height: 39%;
+}
+.layer-bottle {
+  left: 25.4%;
+  top: -17.2%;
+  width: 45.8%;
+  height: 114%;
+  z-index: 20;
+}
+.layer-mint {
+  left: 21.6%;
+  top: 15.2%;
+  width: 21%;
+  height: 18%;
+  z-index: 30;
+}
+.layer-kiwi {
+  left: 32.4%;
+  top: 50.4%;
+
+  height: 50.2%;
+  z-index: 30;
+  transform: rotate(40deg);
+}
+.layer-lemon-wedge {
+  left: 64.4%;
+  top: 29.6%;
+  width: 25.4%;
+  height: 23.6%;
+  z-index: 30;
+  transform: rotate(-15deg);
+}
+
+.features {
+  padding: 0;
+  margin: 280px 0 0 0;
+  gap: 24px;
+  list-style: none;
+}
+.feature {
+  width: 238px;
+  gap: 24px;
+}
+.feature-icon {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: var(--surface-dark);
+}
+
+.feature-title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.feature-text {
+  margin: 1px 0 0 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--text-muted);
+}
+
+.section-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 75px;
+  text-align: center;
+}
+.flavors-box {
+  margin-top: 99px;
+  padding-bottom: 60px;
+  border-radius: 90px;
+  background-color: var(--surface-dark);
+  color: var(--text-inverse);
+}
+.flavors-content {
+  width: 988px;
+  margin: -75px auto 0 95px;
+}
+.flavors-row-second {
+  margin-top: 60px;
+}
+.flavor {
+  width: 200px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+.flavor-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.flavor-img {
+  margin: 24px auto 0 auto;
+
+  object-fit: contain;
+}
+.flavor-name {
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.flavor-text {
+  margin: 16px 0 0 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-inverse-muted);
+}
+
+.retailers {
+  margin-top: 160px;
+}
+.retailers-inner {
+  width: 1050px;
+  margin: auto;
+}
+.retailers-row {
+  margin-top: 50px;
+}
+.retailers-row-second {
+  width: 843px;
+  margin: 50px auto 0 auto;
+}
+.retailer {
+  width: 238px;
+  text-align: center;
+}
+.retailer-img {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.retailer-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.footer {
+  padding: 128px 0 34px 0;
+  text-align: center;
+}
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
