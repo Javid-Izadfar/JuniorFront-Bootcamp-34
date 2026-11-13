@@ -7,18 +7,23 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Sign in</title>
   </head>
-  <body class="font-sans dark:bg-gray-950 dark:text-white">
-    <main>
-      <div class="min-[1440px]:w-lg min-[390px]:w-89.5 m-auto">
-        <div class="flex justify-center gap-3 mt-64">
+  <body
+    class="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-950 dark:text-white"
+  >
+    <main class="max-w-95 w-full px-4 lg:px-0">
+      <div class="text-center">
+        <a
+          href="#"
+          title="Go to Home"
+          class="inline-flex items-center gap-x-3 font-semibold text-lg text-gray-900 dark:text-white"
+        >
           <svg
-            width="32"
-            height="32"
+            class="block size-8"
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_27_24542)">
+            <g>
               <path
                 d="M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z"
                 fill="#4F46E5"
@@ -31,23 +36,23 @@
                 stroke="white"
               />
             </g>
-            <defs>
-              <clipPath id="clip0_27_24542">
-                <rect width="32" height="32" fill="white" />
-              </clipPath>
-            </defs>
           </svg>
-          <span class="font-semibold text-lg">Fernway</span>
-        </div>
-        <div
-          class="border border-solid border-gray-900/5 rounded-2xl shadow-sm shadow-black/10 p-8 mt-8 dark:bg-gray-900"
+          Fernway
+        </a>
+      </div>
+      <form
+        class="flex flex-col gap-6 bg-white border border-gray-900/5 rounded-2xl shadow-sm p-8 mt-8 mb-6 dark:bg-gray-900"
+      >
+        <h1
+          class="font-bold text-gray-900 text-2xl tracking-tight dark:text-white"
         >
-          <h1 class="font-bold text-2xl tracking-[-2.5%]">
-            Sign in to Fernway
-          </h1>
+          Sign in to Fernway
+        </h1>
+
+        <div>
           <label
             for="email-input"
-            class="block font-medium text-sm text-gray-700 mt-6 dark:text-white"
+            class="block font-medium text-sm text-gray-700 dark:text-white"
           >
             Work email
           </label>
@@ -56,11 +61,14 @@
             name="email"
             id="email-input"
             placeholder="maya@ortizstudio.com"
-            class="block border rounded-md border-gray-300 min-[390px]:w-73.5 min-[1440px]:w-112 shadow-sm inset-shadow-sm text-gray-400 text-sm font-normal py-2 px-3 mt-1 dark:text-gray-400"
+            class="block bg-white border rounded-md border-gray-300 w-full shadow-sm inset-shadow-sm placeholder:text-gray-400 text-sm py-2 px-3 mt-1 dark:text-gray-400 dark:bg-gray-900"
           />
+        </div>
+
+        <div>
           <label
             for="password"
-            class="block font-medium text-sm text-gray-700 mt-6 dark:text-gray-300"
+            class="block font-medium text-sm text-gray-700 dark:text-gray-300"
           >
             Password
           </label>
@@ -68,43 +76,52 @@
             type="password"
             name="password"
             id="password"
-            placeholder="•••••"
-            class="block border rounded-md border-gray-300 min-[390px]:w-73.5 min-[1440px]:w-112 shadow-sm inset-shadow-sm text-gray-700 font-normal py-2 px-3 mt-1 dark:text-gray-400"
+            class="block bg-white border rounded-md border-gray-300 w-full shadow-sm inset-shadow-sm text-sm py-2 px-3 mt-1 dark:text-gray-400 dark:bg-gray-900"
           />
-          <div class="pt-6 flex justify-between items-center">
-            <div>
-              <input
-                type="checkbox"
-                name="remember"
-                id="remember "
-                class="accent-black mr-[3.5px]"
-              />
-              <label
-                for="remember"
-                class="font-semibold text-sm text-gray-900 dark:text-gray-200"
-              >
-                Remember me
-              </label>
-            </div>
-            <a href="#" title="" class="text-indigo-600 text-sm font-medium"
-              >Forgot password?</a
-            >
+        </div>
+
+        <div class="flex justify-between items-center text-sm">
+          <div
+            class="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-200"
+          >
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              class="accent-black"
+            />
+            <label for="remember">Remember me</label>
           </div>
           <a
             href="#"
-            title="Sign in"
-            class="block w-[87px] h-9 bg-indigo-600 text-white text-sm font-semibold leading-[20px] py-2 px-5 rounded-[9999px] mt-8"
-            >Sign in</a
+            title="reset password"
+            class="text-indigo-600 font-medium"
           >
+            Forgot password?
+          </a>
         </div>
-        <div
-          class="text-gray-600 text-sm font-normal text-center mt-6 mb-64 dark:text-gray-400"
+        <div class="mt-2">
+          <button
+            type="submit"
+            class="block py-2 px-5 rounded-full bg-indigo-600 text-white text-sm font-semibold"
+          >
+            Sign in
+          </button>
+        </div>
+      </form>
+      <div>
+        <p
+          class="text-gray-600 text-sm font-normal text-center dark:text-gray-400"
         >
-          <span>New to Fernway?</span>
-          <a href="#" title="open an account" class="text-indigo-600"
-            >Open an account</a
+          New to Fernway?
+          <a
+            href="#"
+            title="open an account"
+            class="text-indigo-600 font-medium"
           >
-        </div>
+            Open an account
+          </a>
+        </p>
       </div>
     </main>
   </body>
