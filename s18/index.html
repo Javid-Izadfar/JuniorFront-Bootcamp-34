@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="p-5">
+      <div class="bg-blue-200 border border-blue-500 p-2 mb-2">
+        <ul class="flex flex-wrap">
+          <li class="w-1/2 order-3 p-2">
+            <div class="bg-blue-400">1</div>
+          </li>
+          <li class="w-1/2 order-2 p-2">
+            <div class="bg-blue-400">2</div>
+          </li>
+          <li class="w-1/2 order-1 p-2">
+            <div class="bg-blue-400">3</div>
+          </li>
+          <li class="w-1/2 order-4 p-2">
+            <div class="bg-blue-400">4</div>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-green-200 border border-green-500 p-4 mb-2">
+        <ul class="grid grid-cols-2 gap-4">
+          <li class="bg-green-400">1</li>
+          <li class="bg-green-400">2</li>
+          <li class="bg-green-400">3</li>
+          <li class="bg-green-400">4</li>
+        </ul>
+      </div>
+      <div class="bg-red-200 border border-red-600 p-4 mb-2">
+        <ul class="grid grid-cols-4 gap-4">
+          <li class="bg-red-400">1</li>
+          <li class="bg-red-400">2</li>
+          <li class="bg-red-400 col-span-2">3</li>
+          <li class="bg-red-400">4</li>
+          <li class="bg-red-400 col-start-2 col-end-5">5</li>
+          <li class="bg-red-400">6</li>
+          <li class="bg-red-400">7</li>
+          <li class="bg-red-400">8</li>
+          <li class="bg-red-400">9</li>
+          <li class="bg-red-400">10</li>
+        </ul>
+      </div>
+      <div class="bg-purple-200 border border-purple-500 p-4 mb-2">
+        <ul class="grid grid-rows-5 gap-4 grid-flow-col">
+          <li class="bg-purple-400">1</li>
+          <li class="bg-purple-400">2</li>
+          <li class="bg-purple-400">3</li>
+          <li class="bg-purple-400">4</li>
+          <li class="bg-purple-400">5</li>
+          <li class="bg-purple-400">6</li>
+        </ul>
+      </div>
+      <div class="bg-yellow-200 border border-yellow-500 p-4 mb-2">
+        <ul class="grid grid-rows-3 gap-4 grid-flow-col">
+          <li class="row-span-3 bg-yellow-400">A</li>
+          <li class="col-span-2 bg-yellow-400">
+            <div class="h-24">B</div>
+          </li>
+          <li class="row-span-2 col-span-2 bg-yellow-400">C</li>
+        </ul>
+      </div>
+      <div class="bg-gray-200 border border-gray-500 p-4 mb-2">
+        <ul class="grid grid-cols-3 grid-rows-4 w-1/2">
+          <li class="bg-green-500">1</li>
+          <li class="bg-indigo-500">2</li>
+          <li class="bg-amber-500">3</li>
+          <li class="bg-red-500 col-span-3 row-span-3 aspect-square">4</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
