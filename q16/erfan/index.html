@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-50 flex items-center justify-center h-screen">
+    <main class="px-4 lg:px-0 w-full max-w-95">
+      <div class="text-center">
+        <a
+          class="inline-flex items-center gap-x-3 font-semibold text-lg text-gray-900 hover:text-indigo-900"
+          href="#"
+          title="Go To Home"
+        >
+          <svg
+            class="block size-8"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z"
+                fill="#4F46E5"
+              />
+              <path
+                d="M10 22V16M10 16V10H22M10 16H18"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="white"
+              />
+            </g>
+          </svg>
+          Fernway
+        </a>
+      </div>
+      <form
+        class="flex flex-col gap-6 bg-white mb-6 mt-8 p-8 rounded-2xl border border-gray-900/5 shadow-sm"
+      >
+        <h1 class="font-bold text-gray-900 text-2xl">Sign in to Fernway</h1>
+        <div>
+          <label
+            class="font-medium text-sm text-gray-700"
+            for="email_input"
+            id="email_input"
+            >Work email</label
+          >
+          <input
+            name="email"
+            id="email_input"
+            type="email"
+            placeholder="erfan.saleki@gmail.com"
+            class="block w-full mt-1 rounded-md px-3 py-2 border border-gray-300 bg-white shadow-sm text-sm placeholder:text-gray-400"
+          />
+        </div>
+        <div>
+          <label class="font-medium text-sm text-gray-700" for="password_input"
+            >Password</label
+          >
+          <input
+            class="block w-full mt-1 rounded-md px-3 py-2 border border-gray-300 bg-white shadow-sm text-sm placeholder:text-gray-400"
+            name="password"
+            id="password_input"
+            type="password"
+          />
+        </div>
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center gap-2 text-gray-900 font-semibold">
+            <input id="remember_checkbox" type="checkbox" />
+            <label for="remember_checkbox">Remember me</label>
+          </div>
+          <a
+            class="font-medium text-indigo-600 hover:text-indigo-900"
+            href="#"
+            title="Reset Password"
+            >Forgot password?</a
+          >
+        </div>
+        <div class="mt-2">
+          <button
+            class="bg-indigo-600 rounded-full text-white px-5 py-2"
+            type="submit"
+          >
+            Sign in
+          </button>
+        </div>
+      </form>
+      <div>
+        <p class="text-sm text-center text-gray-600 font-normal">
+          New to Fernway?<a
+            class="font-medium text-indigo-600 hover:text-indigo-900"
+            href="#"
+            title="open account"
+            >Open an account</a
+          >
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
