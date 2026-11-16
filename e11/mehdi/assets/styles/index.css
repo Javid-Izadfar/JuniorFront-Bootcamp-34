@@ -1,0 +1,696 @@
+/* =========================
+   Variables
+========================= */
+
+:root {
+  --color-background: #474c59;
+  --color-text: #d9d1c7;
+  --color-dark: #131026;
+
+  --color-text-muted: rgba(217, 209, 199, 0.5);
+  --color-text-subtle: rgba(217, 209, 199, 0.4);
+  --color-line: rgba(217, 209, 199, 0.55);
+
+  --color-card-background: rgba(0, 0, 0, 0.1);
+  --color-card-hover: rgba(0, 0, 0, 0.25);
+
+  --shadow-cover: 2px 2px 25px rgba(0, 0, 0, 0.2);
+  --shadow-cover-hover: 12px 12px 30px rgba(0, 0, 0, 0.35);
+  --shadow-album-card: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  --font-primary: 'Lato', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --transition-duration: 0.6s;
+  --transition-easing: ease;
+}
+
+/* =========================
+   Reset & Body
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+}
+
+/* =========================
+   Header
+========================= */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 24px 0;
+  background: var(--color-background);
+}
+
+.header p {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* =========================
+   Page Layout
+========================= */
+
+.container {
+  width: 1000px;
+  max-width: calc(100% - 48px);
+  margin: 80px auto 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+/* =========================
+   Album Introduction
+========================= */
+
+.album-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 745px;
+  gap: 40px;
+}
+
+/* Vinyl Artwork */
+
+.vinyl-art {
+  position: relative;
+  flex: 0 0 387px;
+  width: 387px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.vinyl-disc,
+.vinyl-overlay {
+  position: absolute;
+  top: 3.33%;
+  right: 0;
+  width: 72.35%;
+  height: 93.34%;
+  transform: translateX(0) rotateY(0);
+  transition: transform var(--transition-duration) var(--transition-easing);
+}
+
+.vinyl-disc {
+  object-fit: cover;
+}
+
+.vinyl-overlay {
+  mix-blend-mode: lighten;
+}
+
+/* Vinyl Center Label */
+
+.vinyl-label {
+  position: absolute;
+  top: 33.33%;
+  right: 23.26%;
+  width: 25.84%;
+  height: 33.34%;
+  transform: translateX(0);
+  transition: transform var(--transition-duration) var(--transition-easing);
+}
+
+/* Album Cover */
+
+.album-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 77.52%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transform-origin: left center;
+  transform: rotateY(0) rotateZ(0);
+  transition:
+    transform var(--transition-duration) var(--transition-easing),
+    box-shadow var(--transition-duration) var(--transition-easing);
+}
+
+/* Vinyl Hover Effect */
+
+.vinyl-art:hover .vinyl-disc,
+.vinyl-art:hover .vinyl-overlay {
+  transform: translateX(45px) rotateZ(18deg) rotateY(-18deg);
+}
+
+.vinyl-art:hover .vinyl-label {
+  transform: translateX(45px) rotateZ(18deg);
+}
+
+.vinyl-art:hover .album-cover {
+  transform: perspective(1000px) rotateY(-18deg) rotateZ(-2deg);
+  box-shadow: var(--shadow-cover-hover);
+}
+
+/* =========================
+   Album Information
+========================= */
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 500px;
+  min-width: 0;
+}
+
+.album-info h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.album-meta {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.album-meta strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.album-description {
+  width: 100%;
+  margin: 0;
+  color: var(--color-text-subtle);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/* Spotify Button */
+
+.spotify-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  border: 2px solid var(--color-dark);
+  border-radius: 4px;
+  color: var(--color-dark);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.spotify-button:hover {
+  background: var(--color-dark);
+  transition: background-color 0.6s ease;
+  color: var(--color-text);
+}
+
+.spotify-button:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.spotify-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* =========================
+   Tracks Section
+========================= */
+
+.tracks-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.tracks-section h2,
+.other-albums h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.track-number,
+.track-duration {
+  flex: 0 0 auto;
+  color: var(--color-text-muted);
+  font-size: 20px;
+}
+
+.track-number {
+  font-weight: 300;
+}
+
+.track-name {
+  flex: 0 0 auto;
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.track-line {
+  flex: 1 1 0;
+  min-width: 1px;
+  height: 1px;
+  background: var(--color-line);
+}
+
+.track-duration {
+  text-align: right;
+}
+
+/* =========================
+   Other Albums
+========================= */
+
+.other-albums {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.album-card {
+  display: flex;
+  flex: 0 0 232px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--color-card-background);
+  transition: background-color 0.3s ease;
+}
+
+.album-card:hover {
+  background: var(--color-card-hover);
+}
+
+.album-card img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: var(--shadow-album-card);
+}
+
+.album-card p {
+  width: 200px;
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  width: 100%;
+  padding: 8px 0 24px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    max-width: calc(100% - 64px);
+  }
+
+  .album-intro {
+    gap: 30px;
+  }
+
+  .vinyl-art {
+    flex: 0 1 40%;
+    max-width: 387px;
+  }
+
+  .album-info {
+    flex: 1 1 0;
+  }
+
+  .album-info h1 {
+    font-size: 34px;
+  }
+
+  .album-list {
+    gap: 20px;
+  }
+
+  .album-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+    min-width: 0;
+  }
+
+  .album-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .album-card p {
+    width: 100%;
+  }
+}
+
+/* =========================
+   Mobile & Small Tablet
+========================= */
+
+@media (max-width: 768px) {
+  /* Header */
+
+  .header {
+    height: 60px;
+    padding: 0 16px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  /* Page Layout */
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 90px auto 0;
+    padding: 0 24px;
+  }
+
+  .page {
+    gap: 60px;
+  }
+
+  /* Album Introduction */
+
+  .album-intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+    min-height: 0;
+  }
+
+  /* Vinyl */
+
+  .vinyl-art {
+    flex: 0 0 242px;
+    width: 100%;
+    max-width: 312px;
+    height: 242px;
+  }
+
+  .vinyl-disc,
+  .vinyl-overlay {
+    width: 72.35%;
+    height: 93.34%;
+  }
+
+  .vinyl-label {
+    width: 25.84%;
+    height: 33.34%;
+  }
+
+  .album-cover {
+    width: 77.52%;
+    height: 100%;
+  }
+
+  .vinyl-art:hover .vinyl-disc,
+  .vinyl-art:hover .vinyl-overlay {
+    transform: translateX(25px) rotateZ(18deg) rotateY(-18deg);
+  }
+
+  .vinyl-art:hover .vinyl-label {
+    transform: translateX(25px) rotateZ(18deg);
+  }
+
+  /* Album Information */
+
+  .album-info {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .album-info h1 {
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .album-meta {
+    font-size: 14px;
+  }
+
+  .album-description {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  /* Spotify */
+
+  .spotify-button {
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+  }
+
+  /* Tracks */
+
+  .tracks-section {
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 0;
+  }
+
+  .tracks-section h2,
+  .other-albums h2 {
+    font-size: 26px;
+  }
+
+  .track-list {
+    width: 100%;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .track {
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    padding: 6px 0;
+  }
+
+  .track-number,
+  .track-duration {
+    font-size: 14px;
+  }
+
+  .track-name {
+    flex: 0 1 auto;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  .track-line {
+    flex: 1 1 0;
+    min-width: 5px;
+  }
+
+  /* Other Albums */
+
+  .other-albums {
+    width: 100%;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .album-list {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .album-card {
+    flex: 0 0 calc((100% - 12px) / 2);
+    min-width: 0;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .album-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .album-card p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.25;
+  }
+
+  /* Footer */
+
+  footer {
+    width: 100%;
+    padding: 0 0 20px;
+    font-size: 11px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 380px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .page {
+    gap: 60px;
+  }
+
+  .album-info h1 {
+    font-size: 24px;
+  }
+
+  .track {
+    gap: 8px;
+  }
+
+  .track-number,
+  .track-duration {
+    font-size: 13px;
+  }
+
+  .track-name {
+    font-size: 15px;
+  }
+
+  .album-card {
+    padding: 8px;
+  }
+
+  .album-card p {
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   Extra Small Mobile
+========================= */
+
+@media (max-width: 340px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .vinyl-art {
+    height: auto;
+    aspect-ratio: 312 / 242;
+    flex-basis: auto;
+  }
+
+  .album-info h1 {
+    font-size: 22px;
+  }
+
+  .track {
+    gap: 6px;
+  }
+
+  .track-number,
+  .track-duration {
+    font-size: 12px;
+  }
+
+  .track-name {
+    font-size: 14px;
+  }
+}

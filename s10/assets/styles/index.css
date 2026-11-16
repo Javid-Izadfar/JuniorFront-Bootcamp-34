@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray-100: #F0F0F0;
+    --gray-200: #E3E5E1;
+    --gray-300: #D9D9D9;
+    --gray-400: #CBCBCB;
+    --gray-500: #898989;
+    --gray-600: #656565;
+
+    --blue-400: #46C3DB;
+    --blue-900: #3B4A6B;
+
+    --sky-day: var(--blue-400);
+    --sky-night: var(--blue-900);
+
+    --fluff-foreground: var(--gray-100);
+    --fluff-background: var(--gray-300);
+
+    --moon-background: var(--gray-400);
+    --moon-shine: var(--gray-200);
+    --crater-background: var(--gray-500);
+    --crater-border: var(--gray-600);
+}
+
+.container {
+    width: 980px;
+    margin: auto;
+}
+.scene {
+    margin: 100px 0;
+    border-radius: 16px;
+    height: 500px;
+    position: relative;
+}
+
+.day {
+    background-color: var(--sky-day);
+}
+.cloud--1 {
+    position: absolute;
+    top: 130px;
+    left: 318px;
+}
+.cloud--1 .fluff-wrapper {
+    position: relative;
+    z-index: 2;
+}
+.cloud--1 .fluff--1 {
+    --size: 240px;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: auto;
+    background-color: var(--fluff-foreground);
+}
+.cloud--1 .fluff--2 {
+    --size: 130px;
+    width: 274px;
+    height: var(--size);
+    margin-top: calc(var(--size) * -1);
+    margin-right:  62px;
+    background-color: var(--fluff-foreground);
+    border-radius: 65px;
+}
+.cloud--1 .fluff--3 {
+    --size: 100px;
+    width: var(--size);
+    aspect-ratio: 1;
+    background-color: var(--fluff-background);
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 51px;
+    z-index: 1;
+}
+
+.cloud--2 {
+    position: absolute;
+    top: 186px;
+    left: 244px;
+}
+.cloud--2 .fluff--1 {
+    --size: 54px;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--fluff-foreground);
+}
+.cloud--2 .fluff--2 {
+    --size: 64px;
+    background-color: var(--fluff-foreground);
+    width: var(--size);
+    aspect-ratio: 2;
+    margin-top: calc(var(--size) * -0.5);
+    margin-left: 10px;
+    border-radius: var(--size);
+}
+
+.cloud--3 {
+    position: absolute;
+    left: 665px;
+    top: 318px;
+}
+.cloud--3 .fluff--1 {
+    --size: 40px;
+    background-color: var(--fluff-foreground);
+    width: calc(var(--size) * 2);
+    height: var(--size);
+    border-radius: var(--size);
+}
+.cloud--3 .fluff--2 {
+    --size: 40px;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--fluff-foreground);
+    margin: 0 auto calc(var(--size) * -0.5) auto;
+}
+
+.night {
+    background-color: var(--sky-night);
+}
+.moon {
+    --size: 250px;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--moon-background);
+    position: absolute;
+    top: 118px;
+    left: 365px;
+    overflow: hidden;
+}
+.moon .shine {
+    background-color: var(--moon-shine);
+    width: 227px;
+    height: 236px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.moon .crater {
+    --size: 0;
+    background-color: var(--crater-background);
+    border-radius: 50%;
+    position: absolute;
+    width: var(--size);
+    aspect-ratio: 1;
+    border: solid 2px transparent;
+}
+.moon .crater--1 {
+    --size: 13px;
+    top: 132px;
+    left: 31px;
+}
+.moon .crater--2 {
+    --size: 34px;
+    top: 66px;
+    left: 68px;
+}
+.moon .crater--3 {
+    --size: 44px;
+    top: 154px;
+    left: 74px;
+    border-color: var(--crater-border);
+}
+.moon .crater--4 {
+    --size: 51px;
+    top: 86px;
+    left: 154px;
+    border-color: var(--crater-border);
+}
+.moon .crater--5 {
+    --size: 25px;
+    top: 181px;
+    left: 196px;
+}

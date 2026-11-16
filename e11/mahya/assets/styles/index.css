@@ -1,0 +1,284 @@
+:root {
+  --dark-gray: #474c59;
+  --white: #d9d1c7;
+  --dark-blue: #131026;
+  --black: #000000;
+  --black-10: #0000001a;
+  --black-50: #2b2f36e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --bg-color: var(--dark-gray);
+  --color: var(--white);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 360px;
+  margin: auto;
+}
+
+@media (min-width: 1100px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.title {
+  text-align: center;
+  --color: var(--white);
+  color: var(--color);
+  font-size: 12px;
+}
+.info-desc {
+  --color: var(--white);
+  color: var(--color);
+  opacity: 0.4;
+  font-family: "Roboto", sans-serif;
+}
+.little {
+  --color: var(--white);
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 16px;
+}
+.album-cover-img {
+  position: relative;
+  z-index: 2;
+  width: 310px;
+  aspect-ratio: 1;
+}
+.disc {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  width: 350px;
+  aspect-ratio: 1;
+}
+.btn {
+  --bg-color: var(--dark-blue);
+  --border-color: var(--dark-blue);
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: solid 2px var(--border-color);
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  font-weight: 700;
+}
+.album-info-title {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.tracks {
+  margin-top: 60px;
+}
+.tracks-title {
+  font-weight: 700;
+  font-size: 26px;
+}
+.tracks-list {
+  list-style: decimal-leading-zero;
+}
+.tracks-item {
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+  gap: 12px;
+}
+.border {
+  flex: 1;
+  border-bottom: 1px dashed #d9d1c726;
+}
+.time {
+  --color: var(--white);
+  color: var(--color);
+  opacity: 50%;
+}
+.track-name {
+  --color: var(--white);
+  color: var(--color);
+}
+.track-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.other-albums {
+  margin-top: 60px;
+}
+.other-albums-title {
+  font-weight: 700;
+  font-size: 26px;
+}
+.albums-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.albums-cover {
+  --bg-color: var(--black-10);
+  padding: 16px;
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 10px 10px 0 #00000080; */
+  background-color: var(--bg-color);
+}
+.albums-cover span {
+  display: block;
+}
+.album-name {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.footer {
+  --bg-color: var(--black-50);
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 12px 0;
+  color: var(--black);
+  margin-top: 30px;
+}
+
+@media (min-width: 1100px) {
+  .intro {
+    margin-top: 100px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .album {
+    display: flex;
+    gap: 120px;
+  }
+  .disc {
+    top: 110px;
+    left: 250px;
+    width: 450px;
+    transition: transform 1s ease;
+  }
+  .btn {
+    --color: var(--dark-blue);
+    background-color: transparent;
+    color: var(--color);
+    font-weight: 700;
+    /* to be fixed: */
+    width: 191px;
+    height: 48px;
+  }
+  .btn:hover {
+    --color: var(--white);
+    --bg-color: var(--dark-blue);
+    color: var(--color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+  }
+  .album-info-title {
+    font-weight: 900;
+    font-size: 40px;
+  }
+  .album-cover-img {
+    width: 400px;
+    perspective: 500px;
+    transform-origin: left center;
+    transition: transform 0.8s ease;
+  }
+  .album-cover:hover .album-cover-img {
+    transform: rotateY(45deg);
+    cursor: pointer;
+  }
+  .album-cover:hover .disc {
+    transform: translateX(100px) rotate(360deg);
+  }
+  .little {
+    font-size: 16px;
+  }
+  .intro {
+    margin-bottom: 200px;
+  }
+  /* .spotify-logo {
+
+  } */
+
+  .tracks {
+    margin-bottom: 126px;
+  }
+  .tracks-title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .tracks-item:hover .track-name {
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .tracks-item:hover .time {
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .tracks-item {
+    gap: 24px;
+    line-height: 36px;
+  }
+
+  .other-albums-title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .albums-cover .album-name {
+    font-size: 16px;
+    display: none;
+  }
+  .albums-wrapper {
+    gap: 24px;
+    justify-content: start;
+  }
+  .albums-cover {
+    width: calc(25% - 24px);
+    background-color: transparent;
+  }
+  .albums-cover:hover {
+    --bg-color: var(--black-10);
+    background-color: var(--bg-color);
+    cursor: pointer;
+  }
+  .albums-cover:hover .album-name {
+    display: block;
+  }
+  .albums-cover-img {
+    width: 200px;
+    aspect-ratio: 1;
+  }
+  .other-albums {
+    margin-bottom: 120px;
+  }
+}

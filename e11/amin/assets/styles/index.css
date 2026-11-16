@@ -1,0 +1,340 @@
+:root {
+
+  --slate: #474c59;
+  --night: #0000001A;
+  --night-deep: #0000004D;
+  --sand: #d9d1c7;
+  --fog: #D9D1C766;
+  --fog-100:#D9D1C780;
+  --dark-purple: #131026;
+  --line-gray: #5d606a;
+  --navy: #131026;
+
+
+  --bg: var(--slate);
+  --surface: var(--night);
+  --surface-hover: var(--night-deep);
+  --text: var(--sand);
+  --text-muted: var(--fog);
+  --text-muted-100: var(--fog-100);
+  --dark-color: var(--dark-purple);
+  --line: var(--line-gray);
+  --surface-dark: var(--navy);
+  --text-dark: var(--navy);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+
+
+.header {
+  padding: 24px 0;
+  text-align: center;
+}
+.header-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.album-intro {
+  gap: 115px;
+  margin: 150px 0 280px 0;
+}
+.vinyl-art {
+  position: relative;
+  width: 387px;
+  height: 300px;
+}
+.layer {
+  position: absolute;
+}
+.vinyl-disc {
+  left: 127px;
+  top: 20px;
+  z-index: 1;
+}
+.album-cover {
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.album-info {
+  width: 498px;
+}
+.album-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.album-meta {
+  margin: 14px 0 12px 0;
+  font-size: 16px;
+  color: var(--text-muted-100);
+}
+.album-artist {
+  font-weight: 700;
+  color: var(--text-muted-100);
+}
+.album-description {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.spotify-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 22px;
+  border: 2px solid var(--dark-color);
+  border-radius: 4px;
+  color: var(--dark-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-title {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+.track {
+  gap: 20px;
+  padding: 9.6px 0;
+}
+.track-number {
+  width: 32px;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-muted-100);
+}
+.track-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+.track-line {
+  flex-grow: 1;
+  border-bottom: 1px dotted var(--line);
+}
+.track-duration {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-muted-100);
+}
+
+.albums {
+  margin-top: 180px;
+}
+.album-list {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.album-card {
+  width: 232px;
+  padding: 13px;
+  border-radius: 4px;
+  background-color: var(--surface);
+}
+.album-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.album-card-name {
+  margin: 12px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 120px;
+  padding: 24px 0;
+  background-color: var(--surface);
+  text-align: center;
+}
+.footer-text {
+  margin: 0;
+  font-size: 15px;
+  color: var(--dark-color);
+}
+.footer-name {
+  font-weight: 700;
+}
+
+/* hover and effects */
+
+.album-card {
+  transition: background-color 0.3s ease;
+}
+.album-card:hover {
+  background-color: var(--surface-hover);
+}
+
+.vinyl-disc,
+.album-cover {
+  transition: transform 1.5s ease-in-out;
+}
+.vinyl-art:hover .vinyl-disc {
+  transform: translateX(66px) rotate(180deg) scale(1.08);
+}
+.vinyl-art:hover .album-cover {
+  transform: perspective(800px) rotateY(-20deg) scale(1.08);
+}
+
+
+.spotify-button:hover {
+  background-color: var(--surface-dark);
+  border-color: var(--surface-dark);
+  color: var(--text);
+
+}
+.spotify-icon-hover {
+  display: none;
+}
+.spotify-button:hover .spotify-icon {
+  display: none;
+}
+.spotify-button:hover .spotify-icon-hover {
+  display: block;
+}
+
+/* responsive layout */
+@media (max-width: 1040px) {
+  .container {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+  .header-title {
+    font-size: 17px;
+  }
+
+  .album-intro {
+    flex-direction: column;
+    align-items: start;
+    gap: 35px;
+    margin: 30px 0 60px 0;
+  }
+  .vinyl-art {
+    width: 312px;
+    height: 238px;
+  }
+  .vinyl-disc {
+    left: 106px;
+    top: 16px;
+    width: 206px;
+    height: 206px;
+  }
+  .album-cover {
+    width: 238px;
+    height: 238px;
+  }
+  .vinyl-art:hover .vinyl-disc {
+    transform: translateX(20px) rotate(360deg);
+  }
+  .vinyl-art:hover .album-cover {
+    transform: perspective(800px) rotateY(-19deg) scale(1.04);
+  }
+
+
+  .spotify-icon {
+    display: none;
+  }
+  .spotify-icon-hover {
+    display: block;
+  }
+
+  .album-info {
+    width: 100%;
+  }
+  .album-title {
+    font-size: 22px;
+    line-height: 29px;
+  }
+  .album-meta {
+    margin: 15px 0 12px 0;
+  }
+  .album-description {
+    margin-bottom: 9px;
+  }
+  .spotify-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-color: var(--surface-dark);
+    background-color: var(--surface-dark);
+    color: var(--text);
+  }
+
+  .section-title {
+    font-size: 27px;
+  }
+  .tracks .section-title {
+    margin-bottom: 17px;
+  }
+  .track {
+    gap: 10px;
+    padding: 12px 0;
+  }
+  .track-number {
+    width: 24px;
+    font-size: 16px;
+  }
+  .track-name {
+    font-size: 18px;
+  }
+  .track-duration {
+    font-size: 20px;
+  }
+
+  .albums {
+    margin-top: 56px;
+  }
+  .album-list {
+    gap: 12px;
+  }
+  .album-card {
+    width: 48%;
+    padding: 15px;
+  }
+  .album-card-name {
+    margin-top: 4px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .footer {
+    margin-top: 31px;
+    padding: 12px 0;
+  }
+}
