@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body class="min-h-screen bg-[#292929] font-['Inter'] text-white">
+
+  <main class="mx-auto max-w-[1280px] px-4 py-[33px] md:px-0 md:pt-[93px]">
+
+    <!-- MAIN GRID -->
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-[416px_minmax(0,1fr)]">
+
+      <!-- LEFT COLUMN -->
+      <div class="contents md:grid md:grid-rows-[218px_210px_266px] md:gap-4">
+
+        <!-- WEATHER -->
+        <div class="order-1 relative h-[178px] overflow-hidden rounded-2xl bg-[#3d3d3d] p-4 shadow-[0_4px_4px_rgba(0,0,0,0.14),0_0_1px_rgba(0,0,0,0.12)] md:h-auto">
+
+          <h1 class="text-[28px] font-medium leading-tight">
+            Hello Jay
+          </h1>
+
+          <p class="mt-0.5 text-xs text-[#929292]">
+            Today is mostly sunny
+          </p>
+
+          <!-- WEATHER ICON -->
+          <div class="absolute right-4 top-5 h-[130px] w-[130px]">
+            <img src="./assets/img/sunbehindcolor.svg" alt="Weather" class="h-full w-full object-contain">
+          </div>
+
+          <div class="absolute bottom-4 left-4">
+            <p class="text-[29px] font-medium leading-tight">
+              29°C
+            </p>
+
+            <p class="mt-0.5 text-xs text-[#929292]">
+              Tehran, Iran
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- AGENDA -->
+        <div class="order-2 h-[194px] rounded-2xl bg-[#3d3d3d] p-4 shadow-[0_4px_4px_rgba(0,0,0,0.14),0_0_1px_rgba(0,0,0,0.12)] md:h-auto">
+
+          <h2 class="text-2xl font-medium leading-tight">
+            Tuesday, 11 Jun
+          </h2>
+
+          <p class="mt-0.5 text-xs text-[#929292]">
+            Today's agenda
+          </p>
+
+          <div class="mt-4 grid gap-2">
+
+            <div class="grid border-l-2 border-[#f6c44b] py-1 pl-2.5">
+              <h3 class="text-base leading-tight">
+                BB Daily
+              </h3>
+
+              <p class="mt-1 text-xs text-[#929292]">
+                10:30, Head Office
+              </p>
+            </div>
+
+            <div class="grid border-l-2 border-[#31d58a] py-1 pl-2.5">
+              <h3 class="text-base leading-tight">
+                CodingFront - S10
+              </h3>
+
+              <p class="mt-1 text-xs text-[#929292]">
+                18:00, Google Meet
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- EMAIL INBOX -->
+        <div class="order-3 h-[266px] rounded-2xl bg-[#3d3d3d] p-4 shadow-[0_4px_4px_rgba(0,0,0,0.14),0_0_1px_rgba(0,0,0,0.12)] md:h-auto">
+
+          <h2 class="text-2xl font-medium leading-tight">
+            Email Inbox
+          </h2>
+
+          <p class="mt-0.5 text-xs text-[#929292]">
+            mehdiabdi@gmail.com
+          </p>
+
+          <div class="mt-3 grid">
+
+            <!-- EMAIL 1 -->
+            <div class="grid h-[61px] grid-cols-[48px_minmax(0,1fr)] items-center gap-3 border-b border-[#303030]">
+
+              <!-- STEAM ICON -->
+              <div class="h-12 w-12 rounded-full bg-[#292929]">
+                <img src="./assets/img/R3.png" alt="Steam" class="h-full w-full">
+              </div>
+
+              <div class="min-w-0">
+                <p class="truncate text-[15px]">
+                  RoboCop: Rogue City from your Steam...
+                </p>
+
+                <p class="mt-0.5 text-xs text-[#929292]">
+                  Steam
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- EMAIL 2 -->
+            <div class="grid h-[61px] grid-cols-[48px_minmax(0,1fr)] items-center gap-3 border-b border-[#303030]">
+
+              <!-- GITHUB ICON -->
+              <div class="h-12 w-12 rounded-full bg-[#292929]">
+                <img src="./assets/img/R1.png" alt="Github" class="h-full w-full">
+              </div>
+
+              <div class="min-w-0">
+                <p class="truncate text-[15px]">
+                  Destination: Poolside
+                </p>
+
+                <p class="mt-0.5 text-xs text-[#929292]">
+                  Github
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- EMAIL 3 -->
+            <div class="grid h-[61px] grid-cols-[48px_minmax(0,1fr)] items-center gap-3">
+
+              <!-- H&M ICON -->
+              <div class="h-12 w-12 rounded-full bg-[#292929]">
+                <img src="./assets/img/R2.png" alt="H&M" class="h-full w-full">
+              </div>
+
+              <div class="min-w-0">
+                <p class="truncate text-[15px]">
+                  Destination: Poolside
+                </p>
+
+                <p class="mt-0.5 text-xs text-[#929292]">
+                  H & M
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT COLUMN -->
+      <div class="contents md:grid md:grid-rows-[449px_264px] md:gap-4">
+
+        <!-- NEWS -->
+        <div class="hidden rounded-2xl bg-[#3d3d3d] p-4 shadow-[0_4px_4px_rgba(0,0,0,0.14),0_0_1px_rgba(0,0,0,0.12)] md:block">
+
+          <!-- NEWS TABS -->
+          <div class="mb-4 grid grid-cols-[92px_120px_80px] items-center gap-3">
+
+            <button
+              type="button"
+              class="rounded-md bg-[#292929] px-4 py-2 text-sm font-semibold shadow-md"
+            >
+              Gaming
+            </button>
+
+            <button
+              type="button"
+              class="px-3 py-2 text-sm font-semibold text-[#292929]"
+            >
+              Technology
+            </button>
+
+            <button
+              type="button"
+              class="px-3 py-2 text-sm font-semibold text-[#292929]"
+            >
+              Crypto
+            </button>
+
+          </div>
+
+          <!-- NEWS IMAGE -->
+          <div class="relative h-[362px] overflow-hidden rounded-lg bg-[#292929]">
+
+            <!-- YOUR NEWS IMAGE -->
+            
+            <img
+              src="./assets/img/back.png"
+              alt="Doom The Dark Ages"
+              class="absolute inset-0 h-full w-full object-cover"
+            >
+           
+
+            <!-- IMAGE PLACEHOLDER -->
+            <div class="absolute inset-0 grid place-items-center text-sm text-[#929292]">
+              News Image
+            </div>
+
+            <!-- NEWS TITLE -->
+            <div class="absolute bottom-4 left-3 right-5 rounded-lg bg-black/65 px-4 py-4 backdrop-blur-md">
+
+              <h2 class="text-xl font-medium leading-snug">
+                Doom Eternal's long-awaited follow-up is a medieval prequel called Doom: The Dark Ages
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- BOTTOM CARDS -->
+        <div class="contents md:grid md:grid-cols-[1.1fr_1fr] md:gap-4">
+
+          <!-- MOOD -->
+          <div class="order-4 h-[264px] rounded-2xl bg-[#3d3d3d] p-4 shadow-[0_4px_4px_rgba(0,0,0,0.14),0_0_1px_rgba(0,0,0,0.12)] md:order-2 md:h-auto">
+
+            <h2 class="text-2xl font-medium leading-tight">
+              How are you feeling?
+            </h2>
+
+            <p class="mt-0.5 text-xs text-[#929292]">
+              Track your mood
+            </p>
+
+            <div class="mt-4 grid grid-cols-3 gap-4">
+
+              <!-- EXCELLENT -->
+              <button
+                type="button"
+                class="grid h-[76px] place-content-center justify-items-center gap-2 rounded-lg bg-[#292929] shadow-md"
+              >
+                <div class="h-7 w-7">
+                  <img src="./assets/img/excellent.png" alt="Excellent" class="h-full w-full">
+                </div>
+                <span class="text-sm font-semibold">Excellent</span>
+              </button>
+
+              <!-- SLEEPY -->
+              <button
+                type="button"
+                class="grid h-[76px] place-content-center justify-items-center gap-2 rounded-lg bg-[#292929] shadow-md"
+              >
+                <div class="h-7 w-7">
+                  <img src="./assets/img/sleepy.png" alt="Sleepy" class="h-full w-full">
+                </div>
+                <span class="text-sm font-semibold">Sleepy</span>
+              </button>
+
+              <!-- SICK -->
+              <button
+                type="button"
+                class="grid h-[76px] place-content-center justify-items-center gap-2 rounded-lg bg-[#292929] shadow-md"
+              >
+                <div class="h-7 w-7">
+                  <img src="./assets/img/sick.png" alt="Sick" class="h-full w-full">
+                </div>
+                <span class="text-sm font-semibold">Sick</span>
+              </button>
+
+              <!-- HUNGRY -->
+              <button
+                type="button"
+                class="grid h-[76px] place-content-center justify-items-center gap-2 rounded-lg bg-[#292929] shadow-md"
+              >
+                <div class="h-7 w-7">
+                  <img src="./assets/img/hungry.png" alt="Hungry" class="h-full w-full">
+                </div>
+                <span class="text-sm font-semibold">Hungry</span>
+              </button>
+
+              <!-- HOT -->
+              <button
+                type="button"
+                class="grid h-[76px] place-content-center justify-items-center gap-2 rounded-lg bg-[#292929] shadow-md"
+              >
+                <div class="h-7 w-7">
+                  <img src="./assets/img/hot.png" alt="Hot" class="h-full w-full">
+                </div>
+                <span class="text-sm font-semibold">Hot</span>
+              </button>
+
+              <!-- MEH -->
+              <button
+                type="button"
+                class="grid h-[76px] place-content-center justify-items-center gap-2 rounded-lg bg-[#292929] shadow-md"
+              >
+                <div class="h-7 w-7">
+                  <img src="./assets/img/meh.png" alt="Meh" class="h-full w-full">
+                </div>
+                <span class="text-sm font-semibold">Meh</span>
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- QUOTE -->
+          <div class="relative order-5 h-[189px] rounded-2xl bg-[#3d3d3d] p-4 shadow-[0_4px_4px_rgba(0,0,0,0.14),0_0_1px_rgba(0,0,0,0.12)] md:order-1 md:h-auto">
+
+            <h2 class="text-2xl font-medium leading-tight">
+              Quote of the Day
+            </h2>
+
+            <p class="mt-0.5 text-xs text-[#929292]">
+              Make sure to remember
+            </p>
+
+            <div class="absolute bottom-[48px] left-4 right-4">
+
+              <p class="text-xl leading-8 text-[#d2d2d2]">
+                “If you can't dazzle them with brilliance, baffle them with bullshit.”
+              </p>
+
+            </div>
+
+            <p class="absolute bottom-4 right-4 text-xs text-[#929292]">
+              W.C. Fields
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
