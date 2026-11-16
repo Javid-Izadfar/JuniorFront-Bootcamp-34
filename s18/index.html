@@ -6,9 +6,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-neutral-800 text-white">
-    <main class="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 pb-8 pt-8 xl:px-0">
+    <main class="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 pb-8 pt-8 xl:px-0 lg:grid-cols-3 lg:pb-40 lg:pt-24">
       <!-- weather -->
-      <section class="flex min-h-44 items-center justify-between rounded-2xl bg-neutral-700 px-4 py-4">
+      <section class="flex min-h-44 items-center justify-between rounded-2xl bg-neutral-700 px-4 py-4 lg:col-start-1 lg:row-start-1 lg:h-56 lg:py-9">
         <div class="flex flex-col justify-between self-stretch">
           <div>
             <h1 class="text-3xl font-normal leading-8">Hello Jay</h1>
@@ -27,7 +27,7 @@
       </section>
 
       <!-- task list -->
-      <section class="rounded-2xl bg-neutral-700 px-4 py-4">
+      <section class="rounded-2xl bg-neutral-700 px-4 py-4 lg:col-start-1 lg:row-start-2 lg:h-52 lg:py-6">
         <h2 class="text-2xl font-normal leading-8">Tuesday, 11 Jun</h2>
         <p class="text-xs text-white/40">Today's agenda</p>
         <ul class="mt-4 flex flex-col gap-1.5">
@@ -43,7 +43,7 @@
       </section>
 
       <!-- Email inbox -->
-      <section class="rounded-2xl bg-neutral-700 px-4 py-4">
+      <section class="rounded-2xl bg-neutral-700 px-4 py-4 lg:col-start-1 lg:row-start-3">
         <h2 class="text-2xl font-normal leading-8">Email Inbox</h2>
         <p class="text-xs text-white/40">javid.izadfar@gmail.com</p>
         <ul class="mt-4 flex flex-col gap-1.5">
@@ -84,7 +84,7 @@
       </section>
 
       <!-- Mood -->
-      <section class="rounded-2xl bg-neutral-700 px-4 py-4">
+      <section class="rounded-2xl bg-neutral-700 px-4 py-4 lg:col-start-3 lg:row-start-3">
         <h2 class="text-2xl font-normal leading-8">How are you feeling?</h2>
         <p class="text-xs text-white/40">Track your mood</p>
         <div class="mt-4 grid grid-cols-3 gap-4">
@@ -128,7 +128,7 @@
       </section>
 
       <!-- Quote of the day -->
-      <section class="flex flex-col rounded-2xl bg-neutral-700 px-4 py-4">
+      <section class="flex flex-col rounded-2xl bg-neutral-700 px-4 py-4 lg:col-start-2 lg:row-start-3">
         <h2 class="text-2xl font-normal leading-8">Quote of the Day</h2>
         <p class="text-xs text-white/40">Make sure to remember</p>
         <blockquote class="mt-9 text-2xl font-light leading-8 text-white/80">
