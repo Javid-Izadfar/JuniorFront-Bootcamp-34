@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="min-h-screen bg-zinc-800 p-3 font-['Inter'] text-white sm:p-5 lg:p-8"
+  >
+    <main class="mx-auto grid max-w-7xl grid-cols-1 gap-4 lg:grid-cols-3">
+      <aside class="flex min-w-0 flex-col gap-4 lg:col-span-1">
+        <section
+          class="flex min-h-36 items-center justify-between gap-2 overflow-hidden rounded-xl bg-zinc-700 p-5"
+        >
+          <div>
+            <h2 class="text-xl font-semibold">Hello Jay</h2>
+            <p class="mt-1 text-xs text-zinc-300">Today is mostly sunny</p>
+            <h3 class="mt-5 text-2xl font-semibold">29°C</h3>
+            <p class="text-xs text-zinc-400">Tehran, Iran</p>
+          </div>
+          <div class="relative h-32 w-32 shrink-0">
+            <div
+              class="absolute right-0 top-0 h-32 w-32 rounded-full bg-gradient-radial from-orange-400 to-orange-500"
+            >
+              <div
+                class="absolute left-3 top-3 h-24 w-24 rounded-full bg-gradient-to-br from-yellow-300 to-amber-400 shadow-md"
+              ></div>
+            </div>
+            <div class="absolute -bottom-1 right-0 h-16 w-24">
+              <div
+                class="absolute bottom-0 right-0 h-9 w-20 rounded-full bg-violet-200"
+              ></div>
+              <div
+                class="absolute bottom-4 right-1 h-10 w-10 rounded-full bg-violet-200"
+              ></div>
+              <div
+                class="absolute bottom-5 right-8 h-9 w-9 rounded-full bg-violet-200"
+              ></div>
+              <div
+                class="absolute left-0 top-1 h-7 w-7 rounded-full bg-violet-200"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section class="rounded-xl bg-zinc-700 p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-lg font-semibold">Tuesday, 11 Jun</h2>
+              <p class="mt-1 text-xs text-zinc-400">Today's Agenda</p>
+            </div>
+          </div>
+          <div class="mt-6 flex flex-col gap-5">
+            <div class="border-l-2 border-amber-400 pl-3">
+              <h3 class="text-sm font-medium">BB Daily</h3>
+              <p class="mt-1 text-xs text-zinc-400">09:30, Head Office</p>
+            </div>
+            <div class="border-l-2 border-emerald-400 pl-3">
+              <h3 class="text-sm font-medium">CodingFront - $10</h3>
+              <p class="mt-1 text-xs text-zinc-400">18:00, Google Meet</p>
+            </div>
+          </div>
+        </section>
+        <section class="rounded-xl bg-zinc-700 p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-lg font-semibold">Email Inbox</h2>
+              <p class="mt-1 text-xs text-zinc-400">javid.izadfar@gmail.com</p>
+            </div>
+          </div>
+          <div class="mt-5 flex flex-col gap-5">
+            <div class="flex min-w-0 items-center gap-3">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-600"
+              >
+                <svg viewBox="0 0 48 48" fill="none" class="h-8 w-8">
+                  <circle cx="32" cy="15" r="7" fill="white" />
+                  <circle cx="32" cy="15" r="4" fill="#0284c7" />
+                  <circle cx="16" cy="29" r="8" fill="white" />
+                  <circle cx="16" cy="29" r="4" fill="#0284c7" />
+                  <path
+                    d="M21 26L29 19"
+                    stroke="white"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M3 25L13 29"
+                    stroke="white"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-sm font-medium">
+                  RoboCop: Rogue City from your Steam wishlist is now on sale!
+                </h3>
+                <p class="mt-1 text-xs text-zinc-400">Steam</p>
+              </div>
+            </div>
+            <div class="flex min-w-0 items-center gap-3">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-neutral-900"
+              >
+                <svg viewBox="0 0 48 48" fill="white" class="h-8 w-8">
+                  <path
+                    d="M24 10C16.3 10 10 16.4 10 24.3C10 30.6 14 35.9 19.7 37.8C20.4 37.9 20.6 37.4 20.6 37V34.5C16.8 35.4 16 32.9 16 32.9C15.4 31.3 14.5 30.9 14.5 30.9C13.2 30 14.6 30 14.6 30C16 30.1 16.7 31.5 16.7 31.5C17.9 33.6 19.8 33 20.6 32.6C20.7 31.7 21.1 31.1 21.5 30.8C18.5 30.5 15.3 29.3 15.3 23.5C15.3 21.8 15.9 20.5 16.8 19.5C16.6 19.2 16 17.7 17 15.7C17 15.7 18.2 15.3 20.6 16.9C22.9 16.3 25.3 16.3 27.6 16.9C30 15.3 31.2 15.7 31.2 15.7C32.2 17.7 31.6 19.2 31.4 19.5C32.3 20.5 32.9 21.8 32.9 23.5C32.9 29.3 29.7 30.5 26.7 30.8C27.2 31.2 27.6 32 27.6 33.2V37C27.6 37.4 27.9 37.9 28.6 37.8C34.2 35.9 38 30.6 38 24.3C38 16.4 31.7 10 24 10Z"
+                  />
+                </svg>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-sm font-medium">
+                  GitHub Notification
+                </h3>
+                <p class="mt-1 text-xs text-zinc-400">Destination: Poolside</p>
+              </div>
+            </div>
+            <div class="flex min-w-0 items-center gap-3">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-rose-400"
+              >
+                <span class="text-sm font-bold text-white">H & M</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-sm font-medium">
+                  Destination: Poolside
+                </h3>
+                <p class="mt-1 text-xs text-zinc-400">H & M</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+      <section class="mt-2 flex min-w-0 flex-col gap-4 lg:col-span-2">
+        <section
+          class="relative hidden min-h-72 flex-col overflow-hidden rounded-xl bg-zinc-700 sm:min-h-96 lg:flex"
+        >
+          <img
+            src="./assets/images/images (1).jfif"
+            alt="Featured article"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <nav class="relative z-10 flex flex-wrap items-center gap-2 p-4">
+            <button
+              class="rounded-md bg-zinc-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-zinc-700"
+            >
+              Gaming
+            </button>
+            <button
+              class="rounded-md px-4 py-2 text-xs font-medium text-zinc-900 transition hover:bg-zinc-900 hover:text-white"
+            >
+              Technology
+            </button>
+            <button
+              class="rounded-md px-4 py-2 text-xs font-medium text-zinc-900 transition hover:bg-zinc-900 hover:text-white"
+            >
+              Crypto
+            </button>
+          </nav>
+          <div
+            class="relative z-10 mt-auto bg-zinc-900/60 p-5 backdrop-blur-md"
+          >
+            <h1 class="max-w-xl text-sm leading-relaxed sm:text-2xl">
+              Doom Eternal's long-awaited follow-up is a medieval prequel called
+              Doom: The Dark Ages
+            </h1>
+          </div>
+        </section>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <section class="rounded-xl bg-zinc-700 p-5">
+            <h2 class="text-lg font-semibold">Quote of the Day</h2>
+            <p class="mt-2 text-xs text-zinc-400">Make sure to remember</p>
+            <div class="mt-6">
+              <p class="mt-6 text-sm leading-relaxed text-zinc-200">
+                "If you can't dazzle them with brilliance, baffle them with
+                bullshit."
+              </p>
+              <p class="mt-2 text-xs text-zinc-400 text-right">W.C. Fields</p>
+            </div>
+          </section>
+          <section class="rounded-xl bg-zinc-700 p-5">
+            <h2 class="mb-5 text-lg font-semibold">How are you feeling?</h2>
+            <div class="grid grid-cols-3 gap-2">
+              <div
+                class="flex cursor-pointer flex-col items-center gap-2 rounded-lg bg-zinc-800 p-3 transition hover:bg-zinc-600"
+              >
+                <span class="text-2xl">🌞</span>
+                <p class="text-center text-xs">Excellent</p>
+              </div>
+              <div
+                class="flex cursor-pointer flex-col items-center gap-2 rounded-lg bg-zinc-800 p-3 transition hover:bg-zinc-600"
+              >
+                <span class="text-2xl">😴</span>
+                <p class="text-center text-xs">Sleepy</p>
+              </div>
+              <div
+                class="flex cursor-pointer flex-col items-center gap-2 rounded-lg bg-zinc-800 p-3 transition hover:bg-zinc-600"
+              >
+                <span class="text-2xl">🤒</span>
+                <p class="text-center text-xs">Sick</p>
+              </div>
+              <div
+                class="flex cursor-pointer flex-col items-center gap-2 rounded-lg bg-zinc-800 p-3 transition hover:bg-zinc-600"
+              >
+                <span class="text-2xl">🍔</span>
+                <p class="text-center text-xs">Hungry</p>
+              </div>
+              <div
+                class="flex cursor-pointer flex-col items-center gap-2 rounded-lg bg-zinc-800 p-3 transition hover:bg-zinc-600"
+              >
+                <span class="text-2xl">🥵</span>
+                <p class="text-center text-xs">Hot</p>
+              </div>
+              <div
+                class="flex cursor-pointer flex-col items-center gap-2 rounded-lg bg-zinc-800 p-3 transition hover:bg-zinc-600"
+              >
+                <span class="text-2xl">😐</span>
+                <p class="text-center text-xs">Meh</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
